@@ -64,7 +64,7 @@ USER nextjs
 EXPOSE 8080
 
 ENV PORT=8080
-ENV HOSTNAME="0.0.0.0.0"
+ENV HOSTNAME="0.0.0.0"
 ENV DATABASE_URL="file:/app/data/nthexp.db"
 
 CMD ["./start.sh"]
