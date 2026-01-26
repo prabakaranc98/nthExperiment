@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { ExperimentWithMetrics } from "@/types";
 
+export const dynamic = 'force-dynamic';
+
 async function getExperiments(): Promise<ExperimentWithMetrics[]> {
   const user = await getOrCreateOwner();
 
