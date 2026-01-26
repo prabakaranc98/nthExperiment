@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { EXPERIMENT_TYPE_COLORS } from "@/types";
 import type { ExperimentWithMetrics } from "@/types";
 
+export const dynamic = 'force-dynamic';
+
 async function getDashboardData() {
   const user = await getOrCreateOwner();
 
