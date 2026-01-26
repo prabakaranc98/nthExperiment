@@ -1,8 +1,10 @@
 FROM node:20-slim AS base
 
+# Install OpenSSL for Prisma
+RUN apt-get update -y && apt-get install -y openssl && rm -rf /var/lib/apt/lists/*
+
 # Install dependencies only when needed
 FROM base AS deps
-# RUN apk add --no-cache libc6-compat  # Not needed for Debian-based images
 WORKDIR /app
 
 # Install dependencies
@@ -32,10 +34,19 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
+# Install prisma CLI for db push at startup
+RUN npm install -g prisma
+
 # Copy necessary files
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/src/generated ./src/generated
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+# Copy startup script
+COPY --from=builder /app/scripts/start.sh ./start.sh
+RUN chmod +x ./start.sh
 
 # Set the correct permission for prerender cache
 RUN mkdir .next
@@ -56,4 +67,4 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 ENV DATABASE_URL="file:/app/data/nthexp.db"
 
-CMD ["node", "server.js"]
+CMD ["./start.sh"]
