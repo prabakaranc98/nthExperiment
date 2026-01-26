@@ -1,0 +1,70 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id          String       @id @default(uuid())
+  email       String       @unique
+  name        String?
+  settings    String?      // JSON string for preferences, timezone, etc.
+  createdAt   DateTime     @default(now())
+  experiments Experiment[]
+}
+
+model Experiment {
+  id              String   @id @default(uuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title           String
+  hypothesis      String
+  type            String   // habit, wellbeing, creative, social, data, learning, custom
+  intervention    String?  // What you're doing differently
+  successCriteria String?  // Optional success criteria
+  status          String   @default("draft") // draft, active, paused, completed, archived
+  frequency       String   @default("daily") // daily, weekdays, weekly, custom
+  customFrequency String?  // JSON for custom frequency config
+  startDate       DateTime?
+  endDate         DateTime? // Planned end date
+  actualEndDate   DateTime? // When actually completed
+  conclusion      String?   // Final reflection
+  tags            String?   // JSON array of tags
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  metrics         Metric[]
+  entries         Entry[]
+}
+
+model Metric {
+  id           String     @id @default(uuid())
+  experimentId String
+  experiment   Experiment @relation(fields: [experimentId], references: [id], onDelete: Cascade)
+  name         String
+  description  String?
+  type         String     // boolean, number, scale, text, duration, select, multi-select
+  config       String?    // JSON config (min, max, options, unit, etc.)
+  isPrimary    Boolean    @default(false)
+  order        Int        @default(0)
+  createdAt    DateTime   @default(now())
+}
+
+model Entry {
+  id           String     @id @default(uuid())
+  experimentId String
+  experiment   Experiment @relation(fields: [experimentId], references: [id], onDelete: Cascade)
+  date         DateTime
+  values       String     // JSON { metricId: value, ... }
+  notes        String?    // Optional reflection
+  mood         String?    // Optional quick mood indicator
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@unique([experimentId, date])
+}

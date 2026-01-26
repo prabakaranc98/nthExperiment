@@ -1,0 +1,33 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=file:/app/data/nthexp.db
+      - OWNER_EMAIL=${OWNER_EMAIL:-owner@example.com}
+    volumes:
+      - nthexp-data:/app/data
+    restart: unless-stopped
+
+  # Development service
+  dev:
+    build:
+      context: .
+      target: deps
+    command: sh -c "npx prisma generate && npm run dev"
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=file:./prisma/dev.db
+      - OWNER_EMAIL=${OWNER_EMAIL:-owner@example.com}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    profiles:
+      - dev
+
+volumes:
+  nthexp-data:
