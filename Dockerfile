@@ -65,6 +65,8 @@ EXPOSE 8080
 
 ENV PORT=8080
 ENV HOSTNAME="0.0.0.0"
+# DATABASE_URL and DATABASE_AUTH_TOKEN set via Cloud Run env vars
+# Default to local SQLite for backwards compatibility
 ENV DATABASE_URL="file:/app/data/nthexp.db"
 
 CMD ["./start.sh"]

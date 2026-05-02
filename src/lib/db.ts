@@ -7,9 +7,14 @@ const globalForPrisma = globalThis as unknown as {
 
 function createPrismaClient() {
   const databaseUrl = process.env.DATABASE_URL || "file:./prisma/dev.db";
+  const authToken = process.env.DATABASE_AUTH_TOKEN;
 
   // Create Prisma adapter with config
-  const adapter = new PrismaLibSql({ url: databaseUrl });
+  // Supports both local SQLite (file:) and remote Turso (libsql://)
+  const adapter = new PrismaLibSql({
+    url: databaseUrl,
+    ...(authToken && { authToken }),
+  });
 
   // Create Prisma client with adapter
   return new PrismaClient({ adapter });
