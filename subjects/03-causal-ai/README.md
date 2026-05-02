@@ -10,7 +10,7 @@
 
 ## Essential Starting Points
 
-- [ ] **The Book of Why — Pearl & Mackenzie** *(start here)*
+- [ ] **The Book of Why — Judea Pearl & Dana Mackenzie** *(start here)*
   - Ch. 1: The Ladder of Causation (the three rungs)
   - Ch. 3: From Evidence to Causes — Reverend Bayes
   - Ch. 8: Counterfactuals and the Law
@@ -26,10 +26,24 @@
   - Ch. 4: Learning cause-effect models
   - Ch. 6: Causal discovery from observational data
 
-- [ ] **Causal Inference: The Mixtape — Scott Cunningham** *(applied)*
-  - Ch. 3: Directed Acyclical Graphs
-  - Ch. 5: Potential Outcomes Causal Model
-  - Ch. 9: Instrumental Variables
+- [ ] **Toward Causal Representation Learning — Schölkopf et al.**
+  - §1–3: Why causal structure matters for ML generalization
+  - §5: Independent causal mechanisms principle
+  - §7: Open problems
+
+- [ ] **A Survey on Causal Inference — Elias Bareinboim & Jin Tian**
+  - Full paper — transportability, selection bias, missing data under a causal lens
+
+- [ ] **Causal Reasoning and Learning Systems — Elias Bareinboim**
+  - Lecture series / talks: data fusion, do-calculus completeness, causal RL
+
+- [ ] **A Meta-Transfer Objective for Learning to Disentangle — Yoshua Bengio et al.**
+  - §1–3: Causal structure as inductive bias for generalization
+  - §5: Experiments on distribution shift
+
+- [ ] **GFlowNet Foundations — Yoshua Bengio et al.**
+  - §1–2: Motivation from causal and amortized inference
+  - §4: Connection to causal discovery
 
 ## Experiment Log
 
