@@ -34,6 +34,13 @@ Centered on how to think, live, and act with clarity and self-reliance — drawi
 
 ---
 
+## Seminars
+Extensive paper reading, dissection, and focused implementation across 19 areas of AI/ML/DS. Each seminar is a living paper log — independent of the 8-month experiment cycle, always open.
+
+→ [Browse all seminars](seminars/README.md)
+
+---
+
 ## Program & Navigation
 - [Full Overview & Goals](program.md)
 - [Weekly Reviews](reviews/)
