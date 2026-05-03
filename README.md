@@ -1,46 +1,94 @@
 # The Nth Experiment — 8-Month Self-Directed Diploma
 
-8 months. 3 tracks. 12 subjects. 1 original thesis. Curiosity-led, experiment-driven, intentional.
+*On becoming a polymath in the AI era.*
+
+**[→ Now — Day 1 of 250](now.md)**
 
 ---
 
-## What This Is
+## The Thesis
 
-This is a personal, autodidactic curriculum — a self-directed diploma built not for credentials, not for an audience, but for genuine understanding.
+The classical polymath — da Vinci, Leibniz, Franklin, von Neumann — was defined by genuine mastery across domains that most people kept separate. Not surface familiarity. Deep enough to *contribute* in each, and rare enough to see connections that specialists could not.
 
-The operating principle is **active inquiry over passive consumption**. Every unit of learning is an experiment: it starts with a specific claim, builds the minimal thing needed to test it, deliberately tries to break it, and ends with something reusable. Reading is input. Understanding is what happens when you build the thing, watch it fail in unexpected ways, fix it, and can finally explain *why* it works.
+That model is being stress-tested right now. AI is compressing the cost of acquiring surface knowledge toward zero. You can prompt your way to a working understanding of almost anything in hours. If that is all a polymath was — broad, fast, encyclopedic — then the archetype is obsolete.
 
-This is not a reading list with accountability. It is a research practice — personal, curiosity-led, and rigorous. Claims from papers get tested. Architectures get reimplemented from scratch. Mental models get stress-tested until they break or hold. The output of each experiment is not just an insight but something concrete: a notebook, a clean implementation, a falsified assumption, a new and sharper question.
+But that was never what made polymaths dangerous. What made them dangerous was **synthesis under uncertainty** — the ability to take a hard, open problem and bring to bear the right tools from the right domains at the right moment. That requires something AI cannot do for you: genuine understanding, earned by breaking things, building things, and thinking for yourself across disciplines long enough that the connections become structural rather than accidental.
 
-The discipline comes from within: from honest hypotheses, from building before concluding, from reflecting on what actually broke your understanding — not what confirmed it. No grades. No external validation. Just the compounding of real understanding over 8 months.
+The AI era doesn't make the polymath obsolete. It raises the bar for what polymath means.
+
+---
+
+## What This Curriculum Is
+
+This is a personal, autodidactic program built around one question: **what does it take to be a polymath in the AI era?**
+
+Not breadth for its own sake. Not a checklist of fields. A specific, intentional architecture of understanding — spanning the theory of intelligence, the mechanics of modern AI systems, the foundations of causal reasoning, the history of philosophy and decision-making, and the economics of how technology reshapes the world — designed to compound into something original.
+
+The method is active inquiry: every unit of learning is an experiment. A claim gets identified, a test gets designed, something gets built, it gets broken, and something reusable comes out the other side. Reading is input. Understanding is what you have when you can reconstruct the thing from scratch, break it deliberately, and explain *why* it breaks.
+
+The output is not a portfolio. It is a person with a point of view — and one original intellectual contribution: [Decision Engineering](subjects/13-decision-engineering/README.md), a proposed discipline for the AI era.
+
+---
+
+## The Polymath Stack for the AI Era
+
+A classical education gave you breadth. A research degree gave you depth. Neither is sufficient now.
+
+What's needed is a **stack** — layers that reinforce each other and compound over time:
+
+**Layer 1 — How to Think**
+Philosophy, epistemology, the history of ideas. The operating system. Without this, all other knowledge is borrowed and brittle.
+
+**Layer 2 — How Humans Work**
+Psychology, behavioral economics, consumerism, the sociology of knowledge. Intelligence is not just technical — it is embedded in markets, incentives, and human irrationality. Understanding how people actually reason, decide, and behave is non-negotiable.
+
+**Layer 3 — How Systems Work**
+Causality, complexity, economics, markets. The world is a system of systems. Causal reasoning is the minimum viable tool for understanding any of them. Markets are information processors. History is a stress-test of ideas.
+
+**Layer 4 — How Intelligence Works**
+The theory and history of AI, the philosophy of mind, the mechanics of frontier systems, the deep learning foundations. This includes the full philosophical landscape: functionalism, phenomenology, the hard problem of consciousness, Eastern traditions on mind. You can't work seriously in this era without understanding the technology *and* the philosophy — they constrain each other.
+
+**Layer 5 — How to Build and Break**
+Hands-on implementation, applied research, experimental methodology. Understanding is only real when you can build it, test it, and watch it fail in ways you didn't predict.
+
+**Layer 6 — How to Write and Communicate**
+Writing is not downstream of thinking — it is thinking. The polymath who cannot write cannot fully think. The goal: write clearly about hard things. Explain a transformer to a philosopher. Explain consciousness to an engineer. The sentence that falls apart is telling you the idea isn't ready yet.
+
+**Layer 7 — How to Synthesize**
+The original work. Decision Engineering is the attempt to synthesize everything above into something new — a discipline, a framework, a point of view that didn't exist before you made it.
 
 ---
 
 ## Original Work
 
 ### [Decision Engineering — A Data Science for the Modern AI Era](subjects/13-decision-engineering/README.md)
-A personal intellectual proposal and research agenda developed through this curriculum. Not a track — a thesis. The argument: data science was built for prediction; the AI era demands a discipline built for *decisions* — causal, adaptive, human-in-the-loop, evaluated by outcomes. Every other subject in this curriculum feeds into it.
+The synthesis. A proposed discipline for building systems that make good decisions — causal, adaptive, human-in-the-loop, evaluated by outcomes. Every other subject in this curriculum feeds into it. Not a track — a thesis in progress.
 
 ---
 
 ## Three Tracks
 
 ### Track 1 — AI
-Centered on understanding intelligence — what it is, how we've built toward it, and what we're actually building now.
+The theory, history, and mechanics of intelligence — natural and artificial.
 
 - [History & Theory of Intelligence](subjects/01-history-and-theory-of-intelligence/README.md)
 - [Frontier Systems for AI](subjects/02-frontier-systems-for-ai/README.md)
 - [Causal AI](subjects/03-causal-ai/README.md)
 
 ### Track 2 — Individualism & Abundance
-Centered on how to think, live, and act with clarity and self-reliance — drawing on philosophy, psychology, and economics.
+How to think, reason, and act with clarity — philosophy, psychology, economics.
 
 - [Philosophy](subjects/04-philosophy/README.md)
 - [Psychology & Behavioral Economics](subjects/05-psychology-and-behavioral-economics/README.md)
 - [Economics & Markets](subjects/06-economics-and-markets/README.md)
 
+### Track 2.5 — Writing and Thinking
+Writing as a thinking instrument. Clear, precise prose about hard ideas.
+
+- [Writing and Thinking](subjects/14-writing-and-thinking/README.md)
+
 ### Track 3 — Deep Learning Research
-Focused implementation and study across the core research areas of modern deep learning.
+Build-and-break research across the frontier of modern deep learning.
 
 - [Representation Learning, GenAI and RL](subjects/07-representation-learning-genai-and-rl/README.md)
 - [Continual Learning and Memory Models](subjects/08-continual-learning-and-memory-models/README.md)
@@ -51,8 +99,26 @@ Focused implementation and study across the core research areas of modern deep l
 
 ---
 
+## Sub-Zero Scratch
+Six areas being built from absolute zero — lenses, crafts, background ops, and one hobby. Learned only by building.
+
+| | Area | Type |
+|-|------|------|
+| | [NeuroAI](sub-zero-scratch/lens-a-neuroai/README.md) | Lens |
+| | [Hamming + Scale](sub-zero-scratch/lens-b-hamming-and-scale/README.md) | Lens |
+| | [Technical Writing](sub-zero-scratch/craft-technical-writing/README.md) | Craft |
+| | [Systems & Scale Engineering](sub-zero-scratch/craft-systems-and-scale-engineering/README.md) | Craft |
+| | [Capital + Negotiation + Immigration](sub-zero-scratch/hidden-curriculum-capital-negotiation-immigration/README.md) | Hidden Curriculum |
+| | [Acoustics + ML](sub-zero-scratch/hobby-acoustics-and-ml/README.md) | Hobby |
+| | [Operations Research](sub-zero-scratch/operations-research/README.md) | Lens + Craft |
+| | [Quant Research](sub-zero-scratch/quant-research/README.md) | Lens + Craft |
+
+→ [Full sub-zero-scratch index](sub-zero-scratch/README.md)
+
+---
+
 ## Seminars
-Extensive paper reading, dissection, and focused implementation across 19 areas of AI/ML/DS. Each seminar is a living paper log — independent of the 8-month experiment cycle, always open.
+Deep paper reading and dissection across 19 areas of AI/ML/DS. A living log, always open, independent of the 8-month cycle.
 
 → [Browse all seminars](seminars/README.md)
 

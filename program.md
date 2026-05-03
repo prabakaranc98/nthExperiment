@@ -1,7 +1,8 @@
 # The Nth Experiment — 8-Month Self-Directed Diploma
 
-**Duration:** May 2026 → January 2027
-**Mission:** Go deep on what genuinely interests me. Curiosity-led, experiment-driven, no performance for anyone else.
+**Start:** May 3, 2026 — Day 1
+**End:** January 8, 2027 — Day 250
+**Mission:** Become a polymath for the AI era — not breadth for its own sake, but a specific architecture of understanding that compounds across intelligence theory, causal reasoning, deep learning, philosophy, and decision-making into something original and generative.
 
 ## The Ethos
 Learning here means *breaking things to understand them*. Every experiment starts with a claim — something a paper asserts, a book argues, or intuition suggests — and the job is to test it: build the minimal thing that proves or disproves it, observe what actually happens, and extract something reusable from the wreckage.
@@ -35,6 +36,7 @@ Reading without building is not enough. Understanding is only real when you can 
 | 4 | [Philosophy](subjects/04-philosophy/README.md) | — | — |
 | 5 | [Psychology & Behavioral Economics](subjects/05-psychology-and-behavioral-economics/README.md) | — | — |
 | 6 | [Economics & Markets](subjects/06-economics-and-markets/README.md) | — | — |
+| 14 | [Writing and Thinking](subjects/14-writing-and-thinking/README.md) | — | — |
 
 ## Track 3 — Deep Learning Research
 
@@ -59,7 +61,9 @@ This is not a track. It is a thesis in progress — a personal intellectual cont
 
 ---
 
-## Goals for the 8 Months
-- [ ] ...
-- [ ] ...
-- [ ] ...
+## Goals for the 250 Days
+- [ ] Complete at least one experiment per active subject
+- [ ] Produce a working draft of the Decision Engineering positioning paper
+- [ ] Ship at least 5 pieces of technical writing (Karpathy-mode or Olah-mode)
+- [ ] Build at least one non-trivial implementation from scratch in systems engineering
+- [ ] Have a clear, defensible answer to: "What is Decision Engineering and why now?"
