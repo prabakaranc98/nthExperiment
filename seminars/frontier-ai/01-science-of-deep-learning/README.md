@@ -30,6 +30,7 @@
 | 18 | Tensor Programs V (μP) | Yang et al. | 2022 | queued | Width-scaling theory enabling zero-shot hyperparameter transfer | — | — |
 | 19 | An Image is Worth 16×16 Words (ViT) | Dosovitskiy et al. | 2020 | queued | Inductive-bias minimization works at scale | — | — |
 | 20 | SGDR: Warm Restarts | Loshchilov & Hutter | 2016 | queued | Cyclic schedules and loss surface implications | — | — |
+| 21 | There Will Be a Scientific Theory of Deep Learning | Simon, Kunin, Atanasov et al. | 2026 | queued | The manifesto for a rigorous science of DL — what such a theory requires and where the field stands | — | — |
 
 ---
 
