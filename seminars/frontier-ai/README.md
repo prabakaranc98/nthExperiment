@@ -6,14 +6,40 @@
 
 ---
 
-## The Loop (per paper)
+## The Minimal Artifact Rule
+
+**Every paper produces one artifact. No exceptions.**
+
+The artifact is a **Cornell Note + One-Page Synthesis** — filed in the paper's topic folder, publishable as a log entry at [pracha.me/frontier](https://pracha.me/frontier/foundational-models/).
+
+Template: `_templates/cornell-note.md`
+
+```
+seminars/frontier-ai/01-science-of-deep-learning/
+└── notes/
+    └── 01-resnet-he-2015.md       ← Cornell Note + One-Page Synthesis
+    └── 02-adam-kingma-2014.md
+    ...
+```
+
+**The five fields that make it publishable:**
+- **The Claim** — what the paper asserts
+- **The Mechanism** — how it works
+- **The Key Result** — the number or finding that matters
+- **Where It Breaks** — known failure modes and limits
+- **Why It Matters** — what it enables or changes
+
+---
+
+## The Full Loop (per paper)
 
 1. Read for the **one load-bearing idea**
-2. Write a **synthesis note** — claim, mechanism, statistical/optimization principle, where it breaks
-3. When a cluster clicks, write a **blog post** connecting them
-4. Spin up the **smallest experiment** that reproduces or stress-tests the central claim
+2. Write the **Cornell Note + One-Page Synthesis** ← *mandatory*
+3. Flag **Anki cards** from the note
+4. When a cluster clicks, write a **blog post** connecting them
+5. Spin up the **smallest experiment** that tests the central claim
 
-Reading is input. Notes, posts, and runnable code are the output.
+Reading is input. The note is the minimum output. Everything else is optional but welcome.
 
 ---
 

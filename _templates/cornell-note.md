@@ -1,58 +1,55 @@
-# Cornell Note — [Topic / Paper / Lecture]
+# [Paper Title]
 
-**Source:** [Paper / book / lecture / seminar topic]
-**Date:** [Date]
-**Track:** [Seminar / Lecture-Myself / Experiment]
+**Authors:** [Authors] · **Year:** [Year]
+**Date Read:** [Date]
+**Topic:** [Seminar topic #]
+**Link:** [arxiv / paper URL]
 
 ---
 
 ## Cue Column
-*(keywords, questions, prompts — written while reviewing)*
+*(questions and key terms — fill while reading, use while reviewing)*
 
 - Q:
 - Q:
 - Q:
-- Key term:
-- Key term:
+- Term:
+- Term:
 
 ---
 
-## Note Area
-*(main notes taken while reading/watching — raw, fast, honest)*
-
-&nbsp;
-
-&nbsp;
+## Notes
+*(raw, fast, honest — what the paper actually says)*
 
 &nbsp;
 
 ---
 
-## Summary
-*(written after — 3–5 sentences in your own words. If you can't write this, you don't understand it yet.)*
+## One-Page Synthesis
+*(written after — this is the publishable artifact)*
 
-&nbsp;
+**The Claim:**
+
+**The Mechanism:**
+
+**The Key Result:**
+
+**Where It Breaks / Limitations:**
+
+**Why It Matters:**
 
 ---
 
-## Feynman Check
-*(explain the core idea as if to someone who has never heard of it. No jargon. One short paragraph.)*
+## Feynman Version
+*(explain it to someone smart who has never heard of this — no jargon, one paragraph)*
 
 &nbsp;
-
----
-
-## Anki Cards to Make
-*(flag concepts here that need spaced repetition)*
-
-- [ ]
-- [ ]
-- [ ]
 
 ---
 
 ## Connections
-*(links to other zettels, lectures, or experiments)*
+- [[]]
 
-- [[]]
-- [[]]
+## Anki
+- [ ]
+- [ ]
