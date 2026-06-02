@@ -4,6 +4,7 @@
 **Date Read:** [Date]
 **Topic:** [Seminar topic #]
 **Link:** [arxiv / paper URL]
+**Angle(s):** Archaeologist · Reviewer · Core · Applied · Engineer · Practitioner · Hacker · Teacher
 
 ---
 
@@ -26,7 +27,7 @@
 ---
 
 ## One-Page Synthesis
-*(written after — this is the publishable artifact)*
+*(the publishable artifact — pracha.me/frontier)*
 
 **The Claim:**
 
@@ -44,6 +45,16 @@
 *(explain it to someone smart who has never heard of this — no jargon, one paragraph)*
 
 &nbsp;
+
+---
+
+## Three Exits
+
+**Steelman:** *(one sentence — the strongest version of what the paper claims)*
+
+**Open Question:** *(the sharpest thing you still can't answer)*
+
+**Next Action:** *(deepen it — or branch it)*
 
 ---
 

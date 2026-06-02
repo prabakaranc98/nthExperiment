@@ -4,6 +4,8 @@
 **Pace:** 2 papers/day → ~164 days. Compress to 3/day on topics you know well.
 **Order:** Convergent — foundations first, then representation/generation, then the LLM frontier, then RL, causality, systems, perspective. Topics 11–15 are the frontier-systems layer (2023–25 heavy); Topic 16 is the architecture field guide threading under Topics 1, 4, 5, 6.
 
+→ **[How to Read a Paper](../how-to-read.md)** — 8 angles, sequencing guide, three exits
+
 ---
 
 ## The Minimal Artifact Rule

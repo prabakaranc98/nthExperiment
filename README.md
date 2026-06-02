@@ -9,6 +9,7 @@
 | | | |
 |-|-|-|
 | **[Seminars](seminars/README.md)** | Read and absorb | 327 papers · 16 topics · frontier AI curriculum |
+| **[How to Read](seminars/how-to-read.md)** | Reading philosophy | 8 angles · sequencing · three exits |
 | **[Lecture Myself](lecture-myself/README.md)** | Teach it back | 10 tracks · university-level lecture notes |
 | **[Experiments](experiments/README.md)** | Build and break | reproductions · stress-tests · original builds |
 | **[Zettelkasten](zettel/README.md)** | Atomic notes | one concept · one note · linked |

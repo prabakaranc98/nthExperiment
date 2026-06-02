@@ -1,2 +1,39 @@
+# Environment
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# uv / pip
+*.egg-info/
+dist/
+build/
+.uv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data and checkpoints (usually too large)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+data/
+checkpoints/
+logs/
+wandb/
+runs/
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Secrets
+*.key
+*.pem
