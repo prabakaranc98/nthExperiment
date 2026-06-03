@@ -4,6 +4,7 @@
 *June 2026 → January 2027*
 
 **→ [FAIRE Program Handbook](faire-program.md)** — the degree, the subjects, the thesis, the standard
+**→ [How to Do Research](research-philosophy.md)** — Feynman, Hamming, Olah, Karpathy — on building genuine research craft
 
 ---
 

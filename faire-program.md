@@ -7,6 +7,7 @@
 
 **Canvas:** [nthExperiment](README.md) — this repo is the workspace.
 **Timeline:** June 2026 → January/February 2027
+**Research philosophy:** [How to Do Research](research-philosophy.md) — the craft this program is built on
 
 ---
 
