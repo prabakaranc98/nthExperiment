@@ -2,6 +2,25 @@
 
 Extensive paper reading, dissection, analysis, and focused implementation across the frontiers of AI/ML/DS. Each seminar is a living log — papers are added, read, annotated, and connected over time.
 
+**FAIRE context:** → [Program Handbook](../faire-program.md) · [Now](../now.md) · [How to Read a Paper](how-to-read.md)
+
+## Library
+
+| Doc | What it is |
+|-----|-----------|
+| [Curriculum Index](curriculum-index.md) | Master index — eight pillars, paper spine, how to run it |
+| [Frontier Model Survey](frontier-model-survey.md) | Recipe-level map of frontier + open models, June 2024 → 2026 |
+| [100-Day Mastery Curriculum](frontier-models-100day-curriculum.md) | 9 phases, data → architecture → systems → RL → interp → capstone |
+| [30-Builds Roadmap](30-builds-roadmap.md) | 6-month shipping plan: 30 builds, one model end-to-end |
+| [Frontier of ML/DL/DS — Wide-Angle Map](frontier-ml-dl-ds-map.md) | What "frontier" means + how to position yourself on it |
+| [Frontiers in Machine Learning](frontiers-ml.md) | Learning paradigms, generalization theory, RL, causal, probabilistic ML |
+| [Frontiers in Deep Learning](frontiers-dl.md) | Architectures, diffusion/flow, DL theory, interpretability, neural operators |
+| [Frontiers in Data Science](frontiers-ds.md) | Tabular/TS FMs, causal at scale, conformal, data-centric, agentic |
+| [Applied Statistics for the Modern AI Era](applied-statistics-ai-era.md) | Evals, calibration, PPI, conformal, anytime-valid — the inferential bedrock |
+| [How to Read a Paper](how-to-read.md) | 8 angles, sequencing guide, three exits |
+
+---
+
 ## How to Use
 - Add papers to the log table in the relevant seminar folder
 - Mark status: `queued` → `reading` → `done`

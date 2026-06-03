@@ -1,6 +1,8 @@
 # Lecture Myself
 ### *A Self-Lectured Curriculum*
 
+**FAIRE context:** → [Program Handbook](../faire-program.md) · Capstone for all 5 subjects — write the lecture to prove you can teach it
+
 ---
 
 ## The Idea
