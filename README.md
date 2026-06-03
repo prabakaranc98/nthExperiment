@@ -1,7 +1,14 @@
 # nthExperiment
+## Graduate Program in FAIRE
+### Frontiers in AI & Research Engineering
 
-*Canvas for the MS FAIRE program — Frontiers in AI & Research Engineering.*
-*June 2026 → January 2027*
+*A personal behavioral experimentation platform — testing what self-directed, curiosity-driven, autodidactic learning can do when aimed squarely at the frontier of AI.*
+
+**Degree:** Master of FAIRE (self-conferred, evidence-based)
+**Enrollment:** June 2026 · **Graduation:** January/February 2027
+**Thesis:** nanoLM — a frontier language model built end-to-end, statistically validated, publicly defended
+
+The hypothesis: that genuine curiosity + intentional structure + relentless building — without institutional scaffolding, without credentials, without performative motives — is sufficient to reach the frontier and build something that matters. This repo is the experiment. The evidence accumulates in `arcs/` and `capstones/`. The readout is January 2027.
 
 **→ [FAIRE Program Handbook](faire-program.md)** — the degree, the subjects, the thesis, the standard
 **→ [How to Do Research](research-philosophy.md)** — Feynman, Hamming, Olah, Karpathy — on building genuine research craft
