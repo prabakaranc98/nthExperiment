@@ -1,54 +1,65 @@
 # Seminars
 
-Extensive paper reading, dissection, analysis, and focused implementation across the frontiers of AI/ML/DS. Each seminar is a living log — papers are added, read, annotated, and connected over time.
+Paper reading, dissection, analysis, and focused implementation across the frontiers of AI/ML/DS. Papers are added, read, annotated, and connected over time.
 
 **FAIRE context:** → [Program Handbook](../faire-program.md) · [Now](../now.md) · [How to Read a Paper](how-to-read.md)
 
-## Library
+---
+
+## Frontier AI Curriculum — 16 Topics · 327 Papers
+
+**→ [Browse the full curriculum](frontier-ai/README.md)**
+
+| # | Topic | Papers | FAIRE |
+|---|-------|--------|-------|
+| 01 | [Science of Deep Learning](frontier-ai/01-science-of-deep-learning/README.md) | 21 | 501 |
+| 02 | [Statistical Foundations & Statistics for LLMs](frontier-ai/02-statistical-foundations/README.md) | 20 | 501 |
+| 03 | [Representation Learning](frontier-ai/03-representation-learning/README.md) | 20 | 502 |
+| 04 | [Generative Modeling](frontier-ai/04-generative-modeling/README.md) | 20 | 502 |
+| 05 | [Attention, Memory, Reasoning & Sequence Models](frontier-ai/05-attention-memory-reasoning/README.md) | 20 | 502 |
+| 06 | [AI — LLMs, Multimodal, Agents, Interpretability](frontier-ai/06-llms-multimodal-agents-interpretability/README.md) | 20 | 503 |
+| 07 | [Reinforcement Learning](frontier-ai/07-reinforcement-learning/README.md) | 20 | 504 |
+| 08 | [Causal & Statistical Inference](frontier-ai/08-causal-statistical-inference/README.md) | 20 | 501 |
+| 09 | [Algorithms & Systems for AI](frontier-ai/09-algorithms-and-systems/README.md) | 20 | 505 |
+| 10 | [Complexity, Cognition & First Principles](frontier-ai/10-complexity-cognition-first-principles/README.md) | 20 | 501 |
+| 11 | [Data, Tokenization, Benchmarking & Training at Scale](frontier-ai/11-data-tokenization-benchmarking/README.md) | 25 | 503 |
+| 12 | [Post-Training](frontier-ai/12-post-training/README.md) | 20 | 504 |
+| 13 | [Agents — Capabilities & Systems](frontier-ai/13-agents-capabilities-systems/README.md) | 22 | 504 |
+| 14 | [Reasoning & Inference-Time Compute](frontier-ai/14-reasoning-inference-time-compute/README.md) | 20 | 504 |
+| 15 | [Alignment, Evaluation & Safety](frontier-ai/15-alignment-evaluation-safety/README.md) | 20 | 504 |
+| 16 | [Architectures — From CNNs to Hybrids](frontier-ai/16-architectures-field-guide/README.md) | 20 | 502 |
+
+---
+
+## Foundation Models — Cross-Domain Survey · 15 Domains
+
+**→ [Browse the foundation models seminar](foundation-models/README.md)**
+
+How the FM paradigm spreads across every domain: language, vision, time series, audio, video, protein, omics, physical sciences, tabular, multimodal, virtual cells, climate/earth, code, voice, + design patterns.
+
+---
+
+## Field Maps & Reference Docs
 
 | Doc | What it is |
 |-----|-----------|
 | [Curriculum Index](curriculum-index.md) | Master index — eight pillars, paper spine, how to run it |
-| [Frontier Model Survey](frontier-model-survey.md) | Recipe-level map of frontier + open models, June 2024 → 2026 |
-| [100-Day Mastery Curriculum](frontier-models-100day-curriculum.md) | 9 phases, data → architecture → systems → RL → interp → capstone |
-| [30-Builds Roadmap](30-builds-roadmap.md) | 6-month shipping plan: 30 builds, one model end-to-end |
+| [Frontier Model Survey](frontier-model-survey.md) | Recipe-level map of frontier + open models, 2024 → 2026 |
+| [100-Day Mastery Curriculum](frontier-models-100day-curriculum.md) | 9-phase backbone for FAIRE 503 |
+| [30-Builds Roadmap](30-builds-roadmap.md) | 6-month shipping plan — the FAIRE calendar |
+| [Frontiers in Machine Learning](frontiers-ml.md) | Learning paradigms, generalization theory, RL, causal |
+| [Frontiers in Deep Learning](frontiers-dl.md) | Architectures, diffusion/flow, DL theory, interpretability |
+| [Frontiers in Data Science](frontiers-ds.md) | Tabular/TS FMs, causal at scale, conformal, data-centric |
+| [Applied Statistics for the Modern AI Era](applied-statistics-ai-era.md) | Evals, calibration, PPI, conformal, anytime-valid |
 | [Frontier of ML/DL/DS — Wide-Angle Map](frontier-ml-dl-ds-map.md) | What "frontier" means + how to position yourself on it |
-| [Frontiers in Machine Learning](frontiers-ml.md) | Learning paradigms, generalization theory, RL, causal, probabilistic ML |
-| [Frontiers in Deep Learning](frontiers-dl.md) | Architectures, diffusion/flow, DL theory, interpretability, neural operators |
-| [Frontiers in Data Science](frontiers-ds.md) | Tabular/TS FMs, causal at scale, conformal, data-centric, agentic |
-| [Applied Statistics for the Modern AI Era](applied-statistics-ai-era.md) | Evals, calibration, PPI, conformal, anytime-valid — the inferential bedrock |
 | [How to Read a Paper](how-to-read.md) | 8 angles, sequencing guide, three exits |
 
 ---
 
-## How to Use
-- Add papers to the log table in the relevant seminar folder
-- Mark status: `queued` → `reading` → `done`
-- Add a note: one line on what the paper contributes or why it matters
-- If you implement something, link the experiment from the relevant subject folder
+## The loop (per paper)
 
----
-
-## Index
-
-| # | Seminar |
-|---|---------|
-| 01 | [Generative AI and LLMs, Post-training](01-generative-ai-and-llms/README.md) |
-| 02 | [Mechanistic Interpretability and Causal Abstractions](02-mechanistic-interpretability-and-causal-abstractions/README.md) |
-| 03 | [Continual Learning and Memory Models](03-continual-learning-and-memory-models/README.md) |
-| 04 | [RL for Modern AI](04-rl-for-modern-ai/README.md) |
-| 05 | [Transformers, Diffusions, Flows, Graph Neural Networks](05-transformers-diffusions-flows-gnns/README.md) |
-| 06 | [Cognition and Epistemology in LLMs](06-cognition-and-epistemology-in-llms/README.md) |
-| 07 | [Modern Deep Learning Architectures, Mechanics and Dynamics](07-modern-deep-learning-architectures/README.md) |
-| 08 | [Causality, Decision Making, ML and AI](08-causality-decision-making-ml-ai/README.md) |
-| 09 | [World Models](09-world-models/README.md) |
-| 10 | [Representation Learning](10-representation-learning/README.md) |
-| 11 | [Applied Machine / Deep Learning](11-applied-ml-and-dl/README.md) |
-| 12 | [Distributed Training and GPU Kernels](12-distributed-training-and-gpu-kernels/README.md) |
-| 13 | [Inference, Scaling and Systems for AI/ML](13-inference-scaling-and-systems/README.md) |
-| 14 | [Foundations of Deep Learning and Neural Networks](14-foundations-of-deep-learning/README.md) |
-| 15 | [Vision Language Modeling and Multimodal AI](15-vision-language-and-multimodal/README.md) |
-| 16 | [Agentic Systems](16-agentic-systems/README.md) |
-| 17 | [AI for Biology and Physics](17-ai-for-biology-and-physics/README.md) |
-| 18 | [Machine Learning and Deep Learning Theory](18-ml-and-dl-theory/README.md) |
-| 19 | [Statistics and Modern AI](19-statistics-and-modern-ai/README.md) |
+1. Read for the **one load-bearing idea**
+2. Write a **Cornell Note** → `seminars/frontier-ai/XX/notes/YYYY-paper-name.md`
+3. Flag **Anki cards** from the note
+4. When a cluster clicks → **Lecture Myself** entry
+5. Claim worth testing → **Arc** or **Experiment**
