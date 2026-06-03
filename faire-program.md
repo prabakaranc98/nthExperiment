@@ -88,6 +88,14 @@ Two defended milestones before thesis work:
 
 **Required reading:** Miller (Adding Error Bars to Evals); Bowyer et al.; Angelopoulos PPI; Angelopoulos–Bates conformal; Guo calibration; Kadavath; Chiang Chatbot Arena; Power grokking
 
+**Seminar topics:**
+- [01 · Science of Deep Learning](seminars/frontier-ai/01-science-of-deep-learning/README.md) — scaling laws, grokking, double descent, NTK, edge of stability
+- [02 · Statistical Foundations & Statistics for LLMs](seminars/frontier-ai/02-statistical-foundations/README.md) — calibration, PPI, conformal, evals, hallucination as statistical phenomena
+
+**Field maps:**
+- [Applied Statistics for the Modern AI Era](seminars/applied-statistics-ai-era.md)
+- [Frontiers in Machine Learning](seminars/frontiers-ml.md)
+
 ---
 
 ## FAIRE 502 — Deep Learning & Generative Modeling
@@ -108,6 +116,15 @@ Two defended milestones before thesis work:
 - **502.2** I-JEPA-lite representation learner with a probing study *(JEPA+MPC research thread)*
 
 **Required reading:** Vaswani; Gu–Dao Mamba; Ho DDPM; Lipman Flow Matching; Song Consistency; He MAE; Assran I-JEPA
+
+**Seminar topics:**
+- [03 · Representation Learning](seminars/frontier-ai/03-representation-learning/README.md) — SimCLR, CLIP, MAE, DINO, JEPA
+- [04 · Generative Modeling](seminars/frontier-ai/04-generative-modeling/README.md) — VAE, GAN, DDPM, flow matching, DiT, Sora
+- [05 · Attention, Memory, Reasoning & Sequence Models](seminars/frontier-ai/05-attention-memory-reasoning/README.md) — transformer variants, RoPE, SSMs, Mamba
+- [16 · Architectures — From CNNs to Hybrids](seminars/frontier-ai/16-architectures-field-guide/README.md) — the full architecture lineage
+
+**Field maps:**
+- [Frontiers in Deep Learning](seminars/frontiers-dl.md)
 
 ---
 
@@ -130,6 +147,14 @@ Two defended milestones before thesis work:
 
 **Required reading:** Llama 3 Herd; DeepSeek-V3; Chinchilla; Phi-4; Tülu 3
 
+**Seminar topics:**
+- [06 · AI — LLMs, Multimodal, Agents, Interpretability](seminars/frontier-ai/06-llms-multimodal-agents-interpretability/README.md) — GPT-3 → Llama 3 → DeepSeek-R1, full LLM pipeline
+- [11 · Data, Tokenization, Benchmarking & Training at Scale](seminars/frontier-ai/11-data-tokenization-benchmarking/README.md) — BPE, data curation, MMLU, HumanEval, lm-eval
+
+**Reference docs:**
+- [Frontier Model Survey (2024→2026)](seminars/frontier-model-survey.md) — recipe-level map of every major lab
+- [100-Day Mastery Curriculum](seminars/frontier-models-100day-curriculum.md) — the full 503 backbone
+
 ---
 
 ## FAIRE 504 — RL, Post-Training & Alignment
@@ -151,6 +176,12 @@ Two defended milestones before thesis work:
 
 **Required reading:** InstructGPT; DPO; GRPO/DeepSeekMath; R1; Constitutional AI; Toy Models of Superposition; Induction Heads; Scaling Monosemanticity
 
+**Seminar topics:**
+- [07 · Reinforcement Learning](seminars/frontier-ai/07-reinforcement-learning/README.md) — Q-learning → PPO → DreamerV3 → TD-MPC2
+- [12 · Post-Training](seminars/frontier-ai/12-post-training/README.md) — SFT, RLHF, DPO, GRPO, RLVR, DAPO
+- [14 · Reasoning & Inference-Time Compute](seminars/frontier-ai/14-reasoning-inference-time-compute/README.md) — CoT, STaR, GRPO, AlphaProof, s1
+- [15 · Alignment, Evaluation & Safety](seminars/frontier-ai/15-alignment-evaluation-safety/README.md) — reward hacking, SAEs, sleeper agents, dangerous capabilities
+
 ---
 
 ## FAIRE 505 — Systems & Infrastructure Engineering
@@ -170,6 +201,10 @@ Two defended milestones before thesis work:
 - **505.2** Mini-vLLM serving system with full throughput/latency/cost study
 
 **Required reading:** FlashAttention 1/2/3; Megatron-LM; ZeRO; vLLM/PagedAttention; mixed-precision; DeepSeek-V3 hardware paper
+
+**Seminar topics:**
+- [09 · Algorithms & Systems for AI](seminars/frontier-ai/09-algorithms-and-systems/README.md) — distillation, mixed precision, ZeRO, FlashAttention, vLLM, Triton, HNSW
+- [13 · Agents — Capabilities & Systems](seminars/frontier-ai/13-agents-capabilities-systems/README.md) *(inference / serving side)* — PagedAttention, speculative decoding, continuous batching
 
 ---
 
@@ -218,11 +253,50 @@ On completion, with public reproducible evidence, you can claim:
 | Library / concepts | [library/](library/) — foundations, deep learning, RL, causal, systems |
 | Reads & references | [library/reads-and-references/](library/reads-and-references/) |
 | Lecture myself | [lecture-myself/](lecture-myself/) — 10 tracks, university-level notes |
+| Arcs (weekly builds) | [arcs/](arcs/) |
+| Capstones (defended) | [capstones/](capstones/) |
 | Experiments / builds | [experiments/](experiments/) + [tiny-experiments/](tiny-experiments/) |
 | 30-build roadmap | [seminars/30-builds-roadmap.md](seminars/30-builds-roadmap.md) |
 | 100-day curriculum | [seminars/frontier-models-100day-curriculum.md](seminars/frontier-models-100day-curriculum.md) |
 | Weekly reviews | [reviews/](reviews/) |
 | Now (what's active) | [now.md](now.md) |
+
+---
+
+## Seminar curriculum → FAIRE subject mapping
+
+16 topics · 327 papers · [Browse all →](seminars/frontier-ai/README.md)
+
+| # | Seminar Topic | Papers | FAIRE Subject |
+|---|---------------|--------|---------------|
+| 01 | [Science of Deep Learning](seminars/frontier-ai/01-science-of-deep-learning/README.md) | 21 | 501 |
+| 02 | [Statistical Foundations & Statistics for LLMs](seminars/frontier-ai/02-statistical-foundations/README.md) | 20 | 501 |
+| 03 | [Representation Learning](seminars/frontier-ai/03-representation-learning/README.md) | 20 | 502 |
+| 04 | [Generative Modeling](seminars/frontier-ai/04-generative-modeling/README.md) | 20 | 502 |
+| 05 | [Attention, Memory, Reasoning & Sequence Models](seminars/frontier-ai/05-attention-memory-reasoning/README.md) | 20 | 502 |
+| 06 | [AI — LLMs, Multimodal, Agents, Interpretability](seminars/frontier-ai/06-llms-multimodal-agents-interpretability/README.md) | 20 | 503 |
+| 07 | [Reinforcement Learning](seminars/frontier-ai/07-reinforcement-learning/README.md) | 20 | 504 |
+| 08 | [Causal & Statistical Inference](seminars/frontier-ai/08-causal-statistical-inference/README.md) | 20 | 501 + 504 |
+| 09 | [Algorithms & Systems for AI](seminars/frontier-ai/09-algorithms-and-systems/README.md) | 20 | 505 |
+| 10 | [Complexity, Cognition & First Principles](seminars/frontier-ai/10-complexity-cognition-first-principles/README.md) | 20 | 501 + breadth |
+| 11 | [Data, Tokenization, Benchmarking & Training at Scale](seminars/frontier-ai/11-data-tokenization-benchmarking/README.md) | 25 | 503 |
+| 12 | [Post-Training](seminars/frontier-ai/12-post-training/README.md) | 20 | 504 |
+| 13 | [Agents — Capabilities & Systems](seminars/frontier-ai/13-agents-capabilities-systems/README.md) | 22 | 504 + 505 |
+| 14 | [Reasoning & Inference-Time Compute](seminars/frontier-ai/14-reasoning-inference-time-compute/README.md) | 20 | 504 |
+| 15 | [Alignment, Evaluation & Safety](seminars/frontier-ai/15-alignment-evaluation-safety/README.md) | 20 | 504 |
+| 16 | [Architectures — From CNNs to Hybrids](seminars/frontier-ai/16-architectures-field-guide/README.md) | 20 | 502 |
+
+**Field maps:**
+
+| Map | FAIRE Subject |
+|-----|---------------|
+| [Frontiers in Machine Learning](seminars/frontiers-ml.md) | 501 |
+| [Frontiers in Deep Learning](seminars/frontiers-dl.md) | 502 |
+| [Frontiers in Data Science](seminars/frontiers-ds.md) | 501 + 503 |
+| [Applied Statistics for the Modern AI Era](seminars/applied-statistics-ai-era.md) | 501 |
+| [Frontier Model Survey (2024→2026)](seminars/frontier-model-survey.md) | 503 |
+| [Frontier of ML/DL/DS — Wide-Angle Map](seminars/frontier-ml-dl-ds-map.md) | All |
+| [Curriculum Index](seminars/curriculum-index.md) | All |
 
 ---
 
