@@ -92,3 +92,10 @@ The hypothesis: that genuine curiosity + intentional structure + relentless buil
 | [pyproject.toml](pyproject.toml) | Python environment (uv) — torch, jax, mlx, hf, wandb, causal |
 | [setup.sh](setup.sh) | `bash setup.sh --cuda` to bootstrap the environment |
 | [.env.example](.env.example) | Template for WandB, HF token, GPU SSH, CUDA config |
+| [.vscode/](.vscode/) | Recommended extensions + settings — **Foam** turns the library into a knowledge graph |
+
+---
+
+## Tooling: the knowledge graph
+
+This repo is a [Foam](https://foambubble.github.io/) workspace. Concept notes link to each other with `[[wiki-links]]` (e.g. a brick's *See also* points to `[[flash-attention]]`). Install the recommended extensions ([.vscode/extensions.json](.vscode/extensions.json)) and those links become clickable, with **backlinks** and a **graph view** of how concepts connect. The atomic-concept home is [library/bricks/](library/bricks/README.md); the full concept universe is the [Topic Map](library/bricks/topic-map.md).

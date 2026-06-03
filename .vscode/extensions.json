@@ -1,0 +1,10 @@
+{
+  // Recommended extensions for the nthExperiment knowledge base.
+  // Foam turns this folder into a personal knowledge graph: [[wiki-links]]
+  // become clickable, backlinks are tracked, and a graph view shows how
+  // bricks/notes connect. VS Code will offer to install these on open.
+  "recommendations": [
+    "foam.foam-vscode",
+    "yzhang.markdown-all-in-one"
+  ]
+}

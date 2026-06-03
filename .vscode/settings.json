@@ -1,0 +1,27 @@
+{
+  // ── Foam: personal knowledge graph over the markdown library ──────────────
+  // [[wiki-links]] resolve to <name>.md anywhere in the workspace (bricks use
+  // them in "See also"). Foam also gives backlinks + a graph view.
+  "foam.edit.linkReferenceDefinitions": "off",
+  "foam.files.ignore": [
+    ".venv/**/*",
+    "**/.git/**/*",
+    "**/node_modules/**/*",
+    "outputs/**/*",
+    "**/checkpoints/**/*"
+  ],
+  "foam.completion.useAlias": "whenPossible",
+
+  // Make [[ ]] autocomplete and links feel native in markdown.
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "on"
+    },
+    "editor.wordWrap": "on"
+  },
+  "markdown.validate.enabled": true,
+  "markdown.validate.fileLinks.enabled": "warning",
+  "markdown.validate.referenceLinks.enabled": "warning"
+}
