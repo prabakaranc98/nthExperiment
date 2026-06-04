@@ -2,6 +2,8 @@
 
 *Learn the cell's response function: given a perturbation, predict the new state.*
 
+> **Deep dive:** [AIDO — AI-Driven Digital Organism (GenBio AI)](aido-digital-organism.md) — a full *multiscale* FM stack (DNA→RNA→protein→cell→tissue) aiming at an in-silico organism, and the real-world anchor for **perturbation-as-intervention** causal modeling (the [Causal FM capstone](../../../capstones/causal-foundation-model/capstone.md) stretch).
+
 ## The adaptation
 - **Token** — a gene, represented by its expression level in a cell. A cell is a "sentence" of ranked or value-encoded genes; rank-based (Geneformer) and value-based (scGPT, scFoundation) encodings dominate.
 - **Pretraining objective** — masked gene-expression prediction over tens to hundreds of millions of cells (self-supervised). Frontier perturbation models add a supervised state-transition objective: predict the post-perturbation transcriptome.

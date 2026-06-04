@@ -23,6 +23,9 @@ Portfolio-grade, defended builds — one per FAIRE subject, two per subject. Eac
 | 505-1 | Multi-GPU nanoLM training stack | FAIRE 505 | — | — | — |
 | 505-2 | Mini-vLLM serving system | FAIRE 505 | — | — | — |
 | 599 | Thesis: nanoLM end-to-end | FAIRE 599 | — | — | — |
+| **R1** | Causal Foundation Model (cFM / Do-FM, 300–500M) — in-context causal inference | 501 / 502 *(research elective)* | not started | — | [capstone](causal-foundation-model/capstone.md) |
+
+> **R-track = research / exploratory capstones** — self-initiated bets from the research thread (causal ML × world models × foundation models), cross-listed against the subjects they exercise. Spec → [causal-foundation-model/capstone.md](causal-foundation-model/capstone.md).
 
 ---
 
