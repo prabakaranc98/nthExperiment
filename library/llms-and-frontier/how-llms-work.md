@@ -6,60 +6,67 @@
 
 ## The one-sentence version
 
-An LLM is a function that takes a sequence of tokens and outputs a probability distribution over the next token. It was trained to predict the next token on a massive corpus of text. Almost everything else follows from that.
+An LLM is a function that maps a sequence of tokens to a probability distribution over the next token. It was trained to predict that next token on a massive corpus of text. Almost everything else follows from that.
 
 ---
 
 ## Step 1: Tokenization
 
-Text is converted to integers (tokens) before the model sees it. A tokenizer splits text into subword units using **BPE (Byte-Pair Encoding)**:
+Text becomes integers (tokens) before the model sees it. A tokenizer splits text into subword units, most commonly with **BPE (Byte-Pair Encoding)**:
 
-1. Start with individual characters as the vocabulary
-2. Repeatedly merge the most frequent pair of adjacent tokens into a new token
-3. Stop when you reach the target vocabulary size (~32K–128K tokens)
+1. Start with bytes/characters as the base vocabulary.
+2. Repeatedly merge the most frequent adjacent pair into a new token.
+3. Stop at the target vocabulary size (~32K–256K tokens).
 
-Why subwords? Balances vocabulary size against sequence length. Whole-word tokenization = huge vocabulary. Character tokenization = very long sequences. Subwords are in between.
+**Why subwords?** They trade off vocabulary size against sequence length. Whole-word vocabularies are huge; character vocabularies make sequences very long. Subwords sit in between.
 
-**Important:** "token" ≠ "word". "tokenization" might be ["token", "ization"]. Numbers are often split digit-by-digit. Spaces matter.
+**Watch out:**
+- "token" ≠ "word" — `"tokenization"` might split as `["token", "ization"]`.
+- Numbers are often split digit-by-digit (or in fixed chunks), which is why naive arithmetic is hard.
+- Leading spaces are part of the token; `"the"` and `" the"` are different.
 
 ---
 
 ## Step 2: Pretraining — predicting the next token
 
-The training objective is simple: given tokens [t₁, t₂, ..., tₙ], predict tₙ₊₁.
+The objective is simple: given tokens [t₁, …, tₙ], predict tₙ₊₁.
 
-**The loss:** cross-entropy between the model's predicted distribution and the actual next token:
+**Loss** — cross-entropy between the predicted distribution and the actual next token:
+
 ```
 L = -log P(tₙ₊₁ | t₁, ..., tₙ)
 ```
 
-Do this across billions of (context, next-token) pairs. The model learns, by necessity, to understand language, facts, reasoning patterns, and code — because all of these help it predict the next token more accurately.
+Repeat across trillions of (context, next-token) pairs. To minimize this loss the model is forced to internalize language, facts, reasoning patterns, and code — all of which make the next token more predictable.
 
-**Training data:** 10–15 trillion tokens for frontier models (Llama 3 used 15T). Mostly web text (Common Crawl), filtered and deduplicated, mixed with books, code, Wikipedia, math, and scientific papers.
+**Training data:** 15T+ tokens for frontier models (Llama 3 used 15T; newer flagships train on more). Mostly filtered, deduplicated web text, mixed with books, code, math, and scientific papers — increasingly supplemented with synthetic and model-generated data.
 
 ---
 
 ## Step 3: What the model learns to represent
 
-A model trained only on next-token prediction learns surprisingly rich structure:
-- **Syntax and grammar** — because they're predictable
-- **Factual knowledge** — because it's repeated across the web
-- **Reasoning patterns** — because logical sequences are more predictable than random ones
-- **In-context learning** — patterns in the prompt that shift what's expected
+Next-token prediction alone produces surprisingly rich structure:
 
-The key insight: **compression is understanding**. If you can predict text well, you must have understood it.
+- **Syntax and grammar** — highly predictable, so learned early.
+- **Factual knowledge** — repeated across the corpus.
+- **Reasoning patterns** — logical sequences are more predictable than random ones.
+- **In-context learning** — cues in the prompt that shift what comes next.
+
+The core idea: **compression is understanding**. Predicting text well requires having modeled what generated it.
 
 ---
 
 ## Step 4: Post-training — shaping behavior
 
-A pretrained model is a powerful text predictor, not a helpful assistant. Post-training shapes it:
+A pretrained model is a powerful text predictor, not a helpful assistant. Post-training reshapes it:
 
-1. **Supervised Fine-tuning (SFT):** train on curated (instruction, response) pairs. The model learns to follow instructions.
+| Stage | What it does | Signal |
+|-------|--------------|--------|
+| **SFT** (Supervised Fine-tuning) | Learns to follow instructions | Curated (instruction, response) pairs |
+| **Preference optimization** (RLHF / DPO) | Learns to be helpful, harmless, honest | Human/AI comparisons between outputs |
+| **RLVR** (Reinforcement Learning from Verifiable Rewards) | Learns to reason | Automatic right/wrong checks on math & code |
 
-2. **Preference optimization (RLHF / DPO):** compare model outputs, train to prefer better ones. The model learns to be helpful, harmless, and honest.
-
-3. **RLVR (reasoning):** for math/code, use verifiable rewards (right/wrong answer). The model learns to reason.
+RLVR is what drives the "reasoning model" line (long chains of thought trained against verifiable rewards) that defines much of 2025–2026 frontier practice.
 
 ---
 
@@ -68,31 +75,35 @@ A pretrained model is a powerful text predictor, not a helpful assistant. Post-t
 ```
 Raw text
   → Tokenize (BPE)
-  → Pretrain on next-token prediction (10T+ tokens)
+  → Pretrain on next-token prediction (15T+ tokens)
   → SFT on instruction data
-  → DPO / RLHF / RLVR on preferences / verifiable rewards
-  → Deploy (with quantization, KV cache, inference optimizations)
+  → RLHF / DPO on preferences  +  RLVR on verifiable rewards
+  → Deploy (quantization, KV cache, speculative decoding)
 ```
 
 ---
 
-## Key numbers (frontier models, 2025)
+## Key numbers (frontier models, 2025–2026)
 
 | Property | Range |
 |----------|-------|
-| Parameters | 7B–1T+ (MoE: sparse activation) |
-| Pretraining tokens | 10T–15T |
-| Context window | 128K–10M tokens |
-| Vocabulary size | 32K–128K tokens |
-| Training compute | 10²³–10²⁵ FLOPs |
+| Parameters | 7B–1T+ (MoE: only a fraction active per token) |
+| Pretraining tokens | 15T+ |
+| Context window | 128K–1M+ tokens |
+| Vocabulary size | 32K–256K tokens |
+| Training compute | 10²³–10²⁶ FLOPs |
 | Training cost | $1M–$100M+ |
 
 ---
 
 ## Three things people misunderstand
 
-1. **"It just memorizes things."** No — it also generalizes. It can answer questions about combinations of facts it's never seen exactly.
+1. **"It just memorizes."** It also generalizes — answering questions about combinations of facts it never saw together verbatim.
 
-2. **"Bigger is always better."** At a fixed compute budget, you often get a better model by training a smaller model on more tokens (Chinchilla insight). The *inference-optimal* model is often undertrained relative to compute-optimal.
+2. **"Bigger is always better."** At a fixed compute budget, a smaller model trained on more tokens often wins (the Chinchilla result). And because most cost is at inference, the *inference-optimal* model is usually trained well past compute-optimal — smaller and longer-trained on purpose.
 
-3. **"It doesn't understand, it just predicts tokens."** This debate is unsettled. What's clear: it builds rich internal representations that support diverse tasks. Whether that's "understanding" is a philosophical question.
+3. **"It doesn't understand, it just predicts tokens."** Unsettled. What is clear: it builds internal representations rich enough to support diverse tasks. Whether that counts as "understanding" is a philosophical question, not a technical one.
+
+---
+
+*Related: see the [concept library index](../bricks/README.md) for tokenization, scaling laws, and inference-optimization bricks.*

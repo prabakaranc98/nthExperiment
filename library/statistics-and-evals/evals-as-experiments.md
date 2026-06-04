@@ -6,89 +6,104 @@
 
 ## The problem
 
-A benchmark says: Model A gets 73.2%, Model B gets 72.8%. Is A better?
+A leaderboard says: Model A scores 73.2%, Model B scores 72.8%. Is A better?
 
-**You don't know.** That 0.4% difference might be noise. Without knowing the variance, you can't make a valid claim.
+**You can't tell.** That 0.4-point gap may be noise. Without the variance, the claim is unfalsifiable.
 
-This is the norm in AI: papers report point estimates with no confidence intervals, no statistical tests, no power analysis. Most published "improvements" are within the margin of noise.
+This remains common in 2025-2026 reporting: point estimates with no confidence intervals, no statistical tests, no power analysis. Many headline "improvements" sit inside the margin of noise.
+
+The fix is a reframe: **an eval is a statistical experiment, not a scoreboard.** Treat it like one.
 
 ---
 
 ## Evals as statistical experiments
 
-The key reframe (Miller, Anthropic 2024): **treat benchmark questions as a random sample from a larger population of questions**.
+The core idea (Miller, Anthropic 2024 — *Adding Error Bars to Evals*): **treat benchmark questions as a random sample from a larger population of questions.**
 
-Your sample of 1000 benchmark questions estimates the model's performance on the *population* of all possible questions of this type. The estimate has uncertainty, and you should quantify it.
+Your 1,000 benchmark questions estimate the model's performance on the *population* of all possible questions of that type. That estimate carries uncertainty — quantify it.
 
-**How to get a confidence interval for eval accuracy:**
+### Confidence interval for accuracy
 
-The questions are like coin flips: pass (1) or fail (0). With n questions and k correct:
+Each question is a coin flip: pass (1) or fail (0). With `n` questions and `k` correct:
 
-- Point estimate: p̂ = k/n
-- Standard error: SE = √(p̂(1-p̂)/n)
-- 95% CI (approx): [p̂ - 1.96·SE, p̂ + 1.96·SE]
+| Quantity | Formula |
+|---|---|
+| Point estimate | p̂ = k / n |
+| Standard error | SE = √(p̂(1−p̂) / n) |
+| 95% CI (approx) | [p̂ − 1.96·SE, p̂ + 1.96·SE] |
 
-**Example:** 73.2% on 1000 questions → SE = √(0.732 × 0.268 / 1000) ≈ 1.4% → 95% CI: [70.4%, 76.0%]. A model with 72.8% is well within this interval.
+**Example.** 73.2% on 1,000 questions → SE ≈ √(0.732 × 0.268 / 1000) ≈ 1.4% → 95% CI ≈ [70.4%, 76.0%]. A model at 72.8% sits squarely inside that interval.
 
 ---
 
 ## The paired test — comparing two models properly
 
-The naive comparison computes CIs for each model separately. **The paired test is better**: if both models answered the *same questions*, you can measure *which questions* one got right and the other got wrong.
+The naive comparison computes a CI for each model separately and checks overlap. **A paired test is stronger.** If both models answered the *same questions*, you can look at *which questions* one got right and the other got wrong, cancelling out per-question difficulty.
 
-**McNemar's test** (for paired binary outcomes) has much higher power. Instead of needing the full variance, you only look at the disagreements. This can require 5–10× fewer questions to detect the same gap.
+**McNemar's test** (for paired binary outcomes) ignores the agreements and tests only the disagreements, giving much higher power — often 5-10× fewer questions to detect the same gap.
 
-**Lesson:** design evals to be paired — same questions for both models.
+**Design rule:** run both models on identical question sets so you can pair.
 
 ---
 
 ## When not to use the CLT
 
-The normal approximation (SE formula above) relies on the Central Limit Theorem and assumes n is large enough. For:
-- n < 100: CLT is unreliable; use exact binomial CIs
-- Clustered data (multiple questions from the same topic): ignore clustering and you underestimate variance
-- Short, specialized benchmarks (e.g., GPQA with ~200 questions): Bayesian credible intervals or exact methods
+The normal approximation above relies on the Central Limit Theorem and assumes `n` is large enough. Use exact or Bayesian methods instead when:
 
-Bowyer et al. (2025): "Don't blindly use the CLT in LLM evals with small datasets."
+- **n < 100** — CLT is unreliable; use exact binomial (Clopper-Pearson) CIs.
+- **Clustered data** — multiple questions per topic/document violate independence; ignoring clustering underestimates variance.
+- **Short, specialized benchmarks** — e.g. GPQA Diamond (~200 questions); prefer Bayesian credible intervals or exact methods.
+
+Bowyer et al. (2025): don't blindly apply the CLT to LLM evals on small datasets.
 
 ---
 
-## Power analysis — planning evals properly
+## Power analysis — planning evals before you run them
 
-Power analysis answers: how many questions do I need to reliably detect a difference of Δ?
+Power analysis answers: *how many questions do I need to reliably detect a gap of Δ?*
 
 **Ingredients:**
-- Effect size: Δ (the gap you want to detect)
-- Significance level: α (typically 0.05)
-- Power: 1-β (typically 0.8 — 80% chance of detecting the effect if real)
 
-For proportions, a rough formula: n ≈ 2 × (z_{α/2} + z_β)² × p̄(1-p̄) / Δ²
+- **Effect size** Δ — the gap you want to detect.
+- **Significance level** α — typically 0.05.
+- **Power** 1−β — typically 0.8 (80% chance of detecting a real effect).
 
-where p̄ is the average accuracy and z values are normal quantiles.
+For proportions, a rough sizing formula:
 
-**Lesson:** if you want to detect a 1% improvement with 80% power at α=0.05, you need ~10,000+ questions. Most benchmarks are massively underpowered for small improvements.
+```
+n ≈ 2 · (z_{α/2} + z_β)² · p̄(1−p̄) / Δ²
+```
+
+where p̄ is the average accuracy and the `z` terms are normal quantiles.
+
+**Implication:** detecting a 1-point improvement at 80% power, α=0.05 needs ~10,000+ questions. Most benchmarks are badly underpowered for the small gaps people report.
 
 ---
 
 ## The Chatbot Arena approach
 
-Chatbot Arena (Chiang et al., 2023) uses pairwise human preferences and fits a **Bradley-Terry model**: each model has a latent strength, and the probability of model A beating model B is:
+Chatbot Arena / LMArena (Chiang et al., 2023) ranks models from pairwise human preferences using a **Bradley-Terry model**: each model has a latent strength, and
 
 ```
-P(A beats B) = σ(strength_A - strength_B) = exp(s_A) / (exp(s_A) + exp(s_B))
+P(A beats B) = σ(s_A − s_B) = exp(s_A) / (exp(s_A) + exp(s_B))
 ```
 
-Strengths are estimated by maximum likelihood. Confidence intervals come from bootstrapping.
+Strengths are fit by maximum likelihood; confidence intervals come from bootstrapping.
 
-**The key takeaway from the leaderboard:** top models often have overlapping confidence intervals. Rank 1 and rank 5 might not be distinguishably different. The rank number is not the truth.
+**The leaderboard's own lesson:** top models routinely have overlapping CIs. Rank 1 and rank 5 may not be distinguishable. The rank number is not the truth — read the intervals.
 
 ---
 
 ## Summary: what to do
 
 When reporting eval results:
-1. **Always report a CI**, not just a point estimate
-2. **Use paired tests** when comparing two models on the same questions
-3. **Use exact/Bayesian methods** when n < 200
-4. **Run a power analysis first** if you want to detect a specific gap
-5. **Distinguish statistical significance from practical significance** — a real but tiny improvement may not be worth the deployment cost
+
+1. **Always report a CI**, not just a point estimate.
+2. **Use paired tests** (e.g. McNemar's) when comparing models on the same questions.
+3. **Use exact or Bayesian methods** when n < 200 or data is clustered.
+4. **Run a power analysis first** when you want to detect a specific gap.
+5. **Separate statistical from practical significance** — a real but tiny gain may not justify the deployment cost.
+
+---
+
+*Related: see the [concept-library index](../bricks/README.md) for adjacent topics on measurement and uncertainty.*

@@ -20,6 +20,8 @@ Seven documents. Four are **maps** (the terrain); two are the **path** (executio
 
 Also: [Frontier of ML/DL/DS — Wide-Angle Map](frontier-ml-dl-ds-map.md) | [How to Read a Paper](how-to-read.md)
 
+**Foundations (P0):** [Statistical & Probabilistic Foundations](statistical-probabilistic-foundations.md) (inference · modeling · learning theory · reasoning — frontier AI as applied probability) · [Data Foundations for Frontier AI](data-foundations.md) (the pretrain→mid→post data pipeline · synthetic data · simulators & verifiers · data engineering · open-model recipes).
+
 **Deep-dive course:** [APSL v3 — Algorithmic Probabilistic Structure Learning](apsl-structure-learning.md) — an 18-week graduate syllabus threading P1 (probabilistic foundations), P4 (causal ML), and the amortized-inference frontier (GFlowNets · PFNs · foundation models as structure learners).
 
 ---

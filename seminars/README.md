@@ -39,6 +39,17 @@ How the FM paradigm spreads across every domain: language, vision, time series, 
 
 ---
 
+## Foundations for Frontier AI
+
+The bedrock the rest of the curriculum stands on — *frontier AI as applied probability, statistics, and data engineering at scale.*
+
+| Doc | What it is |
+|-----|-----------|
+| [Statistical & Probabilistic Foundations](statistical-probabilistic-foundations.md) | The P0 spine: probability, inference, probabilistic modeling, learning theory, reasoning — every frontier system as a special case of one calculus |
+| [Data Foundations for Frontier AI](data-foundations.md) | The data pipeline: pretrain/mid/post-training · synthetic data · simulators & verifiers · evals · governance · **data engineering** (collect→clean→engineer→load) · what open models teach |
+
+---
+
 ## Field Maps & Reference Docs
 
 | Doc | What it is |
