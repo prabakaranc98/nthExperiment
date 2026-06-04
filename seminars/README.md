@@ -56,6 +56,16 @@ How the FM paradigm spreads across every domain: language, vision, time series, 
 
 ---
 
+## Course Syllabi — Deep-Dive Tracks
+
+Self-contained graduate-course syllabi for going deep on a single research thread (lectures, paper discussions, problem sets, projects).
+
+| Course | What it is |
+|--------|-----------|
+| [APSL v3 — Algorithmic Probabilistic Structure Learning](apsl-structure-learning.md) | 18-week graduate syllabus: distributions over structured objects — PGMs → MCMC/VI/GFlowNets/PFNs → structured generative models → causal structure learning → **foundation models as structure learners** (Graph FMs, GFlowNet-LLM, causal FMs) |
+
+---
+
 ## The loop (per paper)
 
 1. Read for the **one load-bearing idea**

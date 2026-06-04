@@ -20,6 +20,8 @@ Seven documents. Four are **maps** (the terrain); two are the **path** (executio
 
 Also: [Frontier of ML/DL/DS — Wide-Angle Map](frontier-ml-dl-ds-map.md) | [How to Read a Paper](how-to-read.md)
 
+**Deep-dive course:** [APSL v3 — Algorithmic Probabilistic Structure Learning](apsl-structure-learning.md) — an 18-week graduate syllabus threading P1 (probabilistic foundations), P4 (causal ML), and the amortized-inference frontier (GFlowNets · PFNs · foundation models as structure learners).
+
 ---
 
 ## Part B — The curriculum (eight pillars)
