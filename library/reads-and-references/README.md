@@ -20,6 +20,7 @@ For the concepts these readings explain, see the companion [concept library](../
 
 | # | Topic | What's inside |
 |---|-------|--------------|
+| 00 | [**The Canon — Seminal Books**](00-books-the-canon.md) | The great & frontier-pushing DS/ML/AI **books** (📖 = free online) |
 | 01 | [Deep Learning & Transformers](01-deep-learning-and-transformers.md) | Colah, Jalammar, Karpathy — the visual and practical canon |
 | 02 | [Generative Models](02-generative-models.md) | Diffusion, flows, VAEs, GANs — intuition through math |
 | 03 | [RL & Post-training](03-rl-and-post-training.md) | Spinning Up, Lilian Weng, RLHF/GRPO primers |

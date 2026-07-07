@@ -15,6 +15,7 @@ A beginner-friendly, revision-ready reference. Every concept explained from scra
 
 | Section | What's inside |
 |---------|--------------|
+| **[Bricks](bricks/README.md)** | **334 atomic concept cards** — dense cold-lookup for recurring concepts; the [topic-map](bricks/topic-map.md) is the full concept landscape |
 | [Foundations](foundations/) | Probability, linear algebra, calculus, optimization — the bedrock |
 | [Deep Learning](deep-learning/) | Neural networks from scratch: backprop, transformers, normalization, training |
 | [LLMs & Frontier AI](llms-and-frontier/) | How language models work, pretraining, scaling, MoE, architecture choices |

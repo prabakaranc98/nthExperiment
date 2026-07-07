@@ -8,13 +8,48 @@
 
 ---
 
-## Current Term
+> **Status: PRE-FLIGHT** — curriculum + the 334-card library are authored, but **0 arcs / 0 capstones / 0 quals shipped.** The program *starts* when build #1 commits. Don't let content volume read as progress — *authored ≠ shipped.*
 
-| Term | Weeks | Subjects | Status |
-|------|-------|----------|--------|
-| **Term 1** | Weeks 1–12 | FAIRE 501 + start 502 | **← you are here** |
-| **Term 2** | Weeks 13–24 | Finish 502 · 503 · start 504 | — |
-| **Term 3** | Weeks 25–36 | Finish 504 · 505 · Thesis (599) | — |
+## Progress at a glance
+
+| Track | Shipped | Target |
+|-------|---------|--------|
+| Arcs / modules (builds shipped) | 0 | ~30 |
+| Capstones (defended) | 0 | 13 |
+| Qualifying milestones (Q1, Q2) | 0 | 2 |
+| Reviews (reconciliation) | 0 *(week-01 scaffold only)* | — |
+| 100-hour blocks completed | 0 | — |
+| *Concept library (authored, not "done")* | *334 bricks · 2 foundations docs* | — |
+
+**Daily ritual:** 15–20 min spaced-repetition review ([anki/](anki/README.md)) · advance one paper through the loop (read → [Cornell note](_templates/cornell-note.md) → flag `## Anki` cards → build).
+
+---
+
+## Current 100-hour block  *(the operating unit)*
+
+*One module/concept at a time, question-driven — [a living system, not a checklist](faire-program.md). Order **emerges** from the work; the term/calendar tables below are **maps for blind-spot awareness, not a schedule to walk**. Learning here is holistic and systemic, not reductionist.*
+
+| Block # | Module / concept | Hours | Status |
+|---------|------------------|-------|--------|
+| — | — | 0 / ~100 | not started |
+
+**Live question(s) I'm sitting with** — *the thing that won't leave; explore freely, then reconcile back into notes/bricks:*
+> [your live question here — a paper, a wall you hit, a genuine curiosity]
+
+**Loop state** (Learn ⇄ Experiment ⇄ Interact): —
+**Canalization watch** — *ideas that keep recurring across notes/questions = grooves forming; deepen them into bricks:* —
+
+---
+
+## Terms & calendar  *(scaffold — a map, not a schedule)*
+
+*The real operating unit is the 100-hour block above. This is a loose route for orientation and blind-spot awareness, not a timetable to walk.*
+
+| Term | ~Weeks | Subjects (loose scaffold) | |
+|------|--------|---------------------------|---|
+| **Term 1** | 1–12 | 501 · 506 + start 502 | entry |
+| **Term 2** | 13–24 | finish 502 · 503 · start 504 · tracks | — |
+| **Term 3** | 25–36 | finish 504 · 505 · 507 · tracks · 599 | — |
 
 ---
 
@@ -28,13 +63,7 @@
 
 | Capstone ID | Name | Folder | Status |
 |-------------|------|--------|--------|
-| — | — | — | — |
-
----
-
-## The Question I'm Sitting With This Week
-
-> [One question — from a paper, a lecture, or something that won't leave.]
+| R1 | Causal Foundation Model (cFM / Do-FM) | [causal-foundation-model](capstones/causal-foundation-model/capstone.md) | spec'd · not started |
 
 ---
 
@@ -73,7 +102,9 @@ source .venv/bin/activate   # or: uv run python script.py
 
 ---
 
-## FAIRE Calendar → 30-Build Roadmap
+## FAIRE Calendar → 30-Build Roadmap  *(a possible route, not a timetable)*
+
+*Follow the live question, not the month. This shows one coherent path through the material — use it to spot what you're skipping, not to pace yourself.*
 
 | Month | FAIRE | Builds | Key deliverable |
 |-------|-------|--------|----------------|

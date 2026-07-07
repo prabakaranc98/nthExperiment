@@ -2,7 +2,7 @@
 ## Graduate Program in FAIRE
 ### Frontiers in AI & Research Engineering
 
-*A personal behavioral experimentation platform — testing what self-directed, curiosity-driven, autodidactic learning can do when aimed squarely at the frontier of AI.*
+*A personal behavioral experimentation platform — testing what self-directed, curiosity-driven, autodidactic learning can do when aimed squarely at the **foundations and frontiers of AI research & engineering**.*
 
 **Degree:** Master of FAIRE (self-conferred, evidence-based)
 **Enrollment:** June 2026 · **Graduation:** January/February 2027
@@ -12,6 +12,22 @@ The hypothesis: that genuine curiosity + intentional structure + relentless buil
 
 **→ [FAIRE Program Handbook](faire-program.md)** — the degree, the subjects, the thesis, the standard
 **→ [How to Do Research](research-philosophy.md)** — Feynman, Hamming, Olah, Karpathy — on building genuine research craft
+**→ [What Research Engineering Means](research-engineering.md)** — the "& RE" in FAIRE: building the evidence that turns ideas into defended, reproducible reality
+
+---
+
+## Start Here (opening a block)
+
+*New here? The maps below are **terrain, not a track**. Don't "start week 1" — [this runs as a living system, not a checklist](faire-program.md#how-this-actually-runs--a-living-system). You begin by **opening a ~100-hour block on one module, driven by a live question:***
+
+1. **Read the standard & the ethos** — the [FAIRE Handbook](faire-program.md) (the bar) + [What Research Engineering means](research-engineering.md). Status: **PRE-FLIGHT** — nothing shipped yet.
+2. **Set up** — on **this Mac:** `bash setup.sh --mlx` · on a **GPU box:** `bash setup.sh --cuda`. Copy `.env.example` → `.env`.
+3. **Find the live question** — the thing that won't leave you alone. If you need a spark, browse the [maps](seminars/curriculum-index.md) and [roadmap](seminars/30-builds-roadmap.md) for blind spots — but the project must *emerge from a question*, **never be reverse-engineered from a résumé/JD**.
+4. **Open the block** in [now.md](now.md) — name the module + the question, set a ~100-hour timebox.
+5. **Run the loop** — Learn ⇄ Experiment ⇄ Interact: read → [Cornell note](_templates/cornell-note.md) → flag Anki cards → build an [arc](arcs/README.md) that *tests* the question → reconcile back into [bricks](library/bricks/README.md). **Residue, not pages, is progress.**
+6. **Fetch theory just-in-time** — when you hit the exact wall where you lack a tool, *then* pull it from the [library](library/README.md) / [bricks](library/bricks/README.md) / [books](library/reads-and-references/00-books-the-canon.md).
+
+*Everything below is the terrain. The block + the question is how you move through it.*
 
 ---
 
@@ -25,6 +41,11 @@ The hypothesis: that genuine curiosity + intentional structure + relentless buil
 | **FAIRE 503 — Frontier Language Models** | [Frontier Models Survey](seminars/frontier-model-survey.md) · [100-Day Curriculum](seminars/frontier-models-100day-curriculum.md) · [Seminars: LLMs](seminars/frontier-ai/06-llms-multimodal-agents-interpretability/README.md) · [Seminars: Data & Tokenization](seminars/frontier-ai/11-data-tokenization-benchmarking/README.md) · [Library: LLMs & Frontier AI](library/llms-and-frontier/) · [Lecture Myself: AI](lecture-myself/01-ai/README.md) |
 | **FAIRE 504 — RL, Post-Training & Alignment** | [Seminars: RL](seminars/frontier-ai/07-reinforcement-learning/README.md) · [Seminars: Post-Training](seminars/frontier-ai/12-post-training/README.md) · [Seminars: Alignment & Safety](seminars/frontier-ai/15-alignment-evaluation-safety/README.md) · [Seminars: Reasoning](seminars/frontier-ai/14-reasoning-inference-time-compute/README.md) · [Library: RL & Post-training](library/rl-and-post-training/) · [Library: Interpretability](library/interpretability-and-safety/) · [Reads: Interpretability](library/reads-and-references/04-interpretability.md) · [Reads: RL & Post-training](library/reads-and-references/03-rl-and-post-training.md) |
 | **FAIRE 505 — Systems & Infrastructure Engineering** | [Seminars: Algorithms & Systems](seminars/frontier-ai/09-algorithms-and-systems/README.md) · [Library: Systems](library/systems/) · [Reads: Systems](library/reads-and-references/06-systems-and-efficiency.md) · [Lecture Myself: Algorithms & Systems](lecture-myself/09-algorithms-and-systems/README.md) |
+| **FAIRE 506 — Applied Mathematics for Frontier AI** | [Library: Foundations](library/foundations/) · [Statistical & Probabilistic Foundations](seminars/statistical-probabilistic-foundations.md) · [Frontiers in ML](seminars/frontiers-ml.md) · [Bricks](library/bricks/README.md) |
+| **FAIRE 507 — Bioengineering & FMs for Biology** | [FM: Protein](seminars/foundation-models/06-protein-and-biology/README.md) · [FM: Omics](seminars/foundation-models/07-omics-and-genomics/README.md) · [FM: Virtual Cells](seminars/foundation-models/12-virtual-cells/README.md) · [AIDO](seminars/foundation-models/12-virtual-cells/aido-digital-organism.md) · [R1 capstone](capstones/causal-foundation-model/capstone.md) |
+| **FAIRE 508 — AI for Science & Discovery** *(track)* | [Foundation Models survey](seminars/foundation-models/README.md) · [FM: Physical Sciences](seminars/foundation-models/08-physical-sciences/README.md) · [FM: Climate & Earth](seminars/foundation-models/13-climate-and-earth/README.md) |
+| **FAIRE 509 — AI Safety, Trust & Human Prosperity** *(track)* | [Seminars: Alignment & Safety](seminars/frontier-ai/15-alignment-evaluation-safety/README.md) · [Library: Interpretability](library/interpretability-and-safety/) · [Reads: Interpretability](library/reads-and-references/04-interpretability.md) |
+| **FAIRE 510 — Advanced Machine Intelligence** *(track · research core)* | [Library: Causal ML](library/causal-ml/) · [APSL course](seminars/apsl-structure-learning.md) · [Seminars: Representation Learning](seminars/frontier-ai/03-representation-learning/README.md) · [R1 capstone](capstones/causal-foundation-model/capstone.md) |
 | **FAIRE 599 — Capstone Thesis (nanoLM)** | [Capstones: 599](capstones/README.md) · [30-Builds Roadmap](seminars/30-builds-roadmap.md) · [Experiments](experiments/README.md) |
 
 ---
@@ -36,6 +57,7 @@ The hypothesis: that genuine curiosity + intentional structure + relentless buil
 | **Read & absorb papers** | [seminars/frontier-ai/](seminars/frontier-ai/README.md) — 16 topics, 327 papers |
 | **Understand a concept from scratch** | [library/](library/README.md) — foundations through systems |
 | **Find curated web resources** | [library/reads-and-references/](library/reads-and-references/README.md) |
+| **Read the seminal books** | [The Canon](library/reads-and-references/00-books-the-canon.md) — great & frontier-pushing DS/ML/AI books (📖 free) |
 | **Teach a concept to myself** | [lecture-myself/](lecture-myself/README.md) — 10 tracks |
 | **Do a weekly FAIRE build (arc)** | [arcs/](arcs/README.md) — template: `_templates/arc.md` |
 | **Work on a subject capstone** | [capstones/](capstones/README.md) — template: `_templates/capstone.md` |
@@ -90,7 +112,7 @@ The hypothesis: that genuine curiosity + intentional structure + relentless buil
 | [_templates/](_templates/) | Cornell note · zettel · experiment · log entry · reflection · week review |
 | [scripts/](scripts/) | `new-experiment.sh` · `gpu-connect.sh` · `gpu-sync.sh` |
 | [pyproject.toml](pyproject.toml) | Python environment (uv) — torch, jax, mlx, hf, wandb, causal |
-| [setup.sh](setup.sh) | `bash setup.sh --cuda` to bootstrap the environment |
+| [setup.sh](setup.sh) | bootstrap the env — `--mlx` on this Mac, `--cuda` on a GPU box |
 | [.env.example](.env.example) | Template for WandB, HF token, GPU SSH, CUDA config |
 | [.vscode/](.vscode/) | Recommended extensions + settings — **Foam** turns the library into a knowledge graph |
 

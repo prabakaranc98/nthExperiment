@@ -1,8 +1,8 @@
 # Arcs
 
-Weekly build units from the [30-Builds Roadmap](../seminars/30-builds-roadmap.md). Each arc is a focused, from-scratch build — the thing you ship at the end of the week. Bricks become arcs when they're running.
+Build units — the thing you actually ship. An arc is a focused, from-scratch build that **emerges from a live question** inside a [~100-hour block](../now.md) — an experiment that tests *"is this actually true?"* and leaves a canal. The [30-Builds Roadmap](../seminars/30-builds-roadmap.md) is a scaffold of good candidates, **not a weekly quota**; the real trigger is your question, never a résumé/JD. *First commit before first paper.*
 
-**FAIRE context:** Arcs are the 1-credit learning units within each subject (501–505). → [Program Handbook](../faire-program.md)
+**FAIRE context:** Arcs are the learn-by-building units within each subject. → [Program Handbook](../faire-program.md)
 
 ---
 

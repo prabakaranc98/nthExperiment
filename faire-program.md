@@ -1,13 +1,15 @@
 # Masters in FAIRE — Program Handbook
 ## Frontiers in AI & Research Engineering · pracha.me/frontier/faire
 
-*A rigorous, self-directed post-master's program for the frontier of AI, calibrated course-by-course to the Stanford / CMU / Georgia Tech flagships and engineered to sit on top of an MS in Data Science + ~7.5 years of ML/AI industry experience. It assumes those as prerequisites and goes where they stop: building, scaling, post-training, interpreting, and statistically validating frontier models. **5 core subjects + qualifying milestones + a thesis.** You don't pass by reading; you pass by shipping reproducible work to a defensible standard.*
+*A rigorous, self-directed post-master's program for the **foundations and frontiers of AI research & engineering**, calibrated course-by-course to the Stanford / CMU / Georgia Tech flagships and engineered to sit on top of an MS in Data Science + ~7.5 years of ML/AI industry experience. It assumes those as prerequisites and goes where they stop: building, scaling, post-training, interpreting, and statistically validating frontier models. **7 core subjects + 3 frontier & impact tracks + qualifying milestones + a thesis.** You don't pass by reading; you pass by shipping reproducible work to a defensible standard.*
 
 **FAIRE** = **F**rontiers in **AI** & **R**esearch **E**ngineering.
 
 **Canvas:** [nthExperiment](README.md) — this repo is the workspace.
 **Timeline:** June 2026 → January/February 2027
 **Research philosophy:** [How to Do Research](research-philosophy.md) — the craft this program is built on
+**Research engineering:** [What it means here](research-engineering.md) — the engineering half of the R&E identity
+**Status:** **PRE-FLIGHT** — the curriculum, the 334-card concept library, and the field maps are authored; the *execution* layer (arcs, capstones, quals, weekly reviews) has not started. *Content authored ≠ work shipped.* Live state → [now.md](now.md).
 
 ---
 
@@ -21,11 +23,30 @@
 | Frontier Language Models | FAIRE 503 | 6 | The pretrain→serve pipeline |
 | RL, Post-Training & Alignment | FAIRE 504 | 6 | RLHF→RLVR→reasoning + interpretability/safety |
 | Systems & Infrastructure Engineering | FAIRE 505 | 6 | Kernels, distributed training, serving |
+| Applied Mathematics for Frontier AI | FAIRE 506 | 6 | The mathematical machinery (foundational, runs with 501) |
+| Bioengineering & Foundation Models for Biology | FAIRE 507 | 6 | FMs across DNA→protein→cell; design + causal biology |
+| AI for Science & Discovery | FAIRE 508 | 4 | AI as an instrument of discovery across the sciences |
+| AI Safety, Trust & Human Prosperity | FAIRE 509 | 4 | Alignment, evals, interpretability-for-safety, the human dimension |
+| Advanced Machine Intelligence | FAIRE 510 | 4 | The research-core ML track — causal, representation & world models |
 | Capstone Thesis | FAIRE 599 | 6 | nanoLM end-to-end + statistical report + defense |
-| **Total** | | **36** | Comparable to a top-tier MS course load |
+| **Total** | | **60** | A deep, research-oriented load — 7 cores + 3 tracks + thesis |
 
 **Each subject = 2–3 arcs (learn-by-building units) + 2 capstones (portfolio-grade, defended).**
-**Duration:** 3 terms ≈ 9 months, mapped to the [30-Build Roadmap](seminars/30-builds-roadmap.md).
+**Duration:** 3 terms ≈ 9 months — *a horizon, not a timetable* (see "How this runs" below).
+
+---
+
+## How this actually runs — a living system
+
+This is a **complex adaptive system, not a checklist** ([curriculum as a living system](https://pracha.me/musings/posts/2026_07_03_curriculum-as-a-living-system.html)). Learning here is **holistic and systemic, not reductionist** — order *emerges* from doing; it is not imposed by a plan.
+
+- **Operating unit:** one **~100-hour block on a single module/concept at a time**, question-driven — free exploration across topics, then reconciliation back into the notes/bricks.
+- **Just-in-time theory:** hold a live question, hit the exact wall where you lack a tool, *then* go get it. Nothing is front-loaded.
+- **Everything below is scaffold** — the subjects, credits, terms, and roadmap reveal blind spots and offer routes; they do **not** dictate the path or the pace.
+- **Canalization:** ideas that keep recurring are grooves forming — the emerging structure of *your* understanding. Follow them; redundancy is robustness, not waste.
+- **The loop is Learn ⇄ Experiment ⇄ Interact** — cyclical, and never "finished."
+
+Read the rest of this handbook as *terrain*. The [30-Build Roadmap](seminars/30-builds-roadmap.md) and the term calendar are one *possible route* across it — for orientation, not obligation.
 
 ---
 
@@ -92,9 +113,14 @@ Two defended milestones before thesis work:
 - [01 · Science of Deep Learning](seminars/frontier-ai/01-science-of-deep-learning/README.md) — scaling laws, grokking, double descent, NTK, edge of stability
 - [02 · Statistical Foundations & Statistics for LLMs](seminars/frontier-ai/02-statistical-foundations/README.md) — calibration, PPI, conformal, evals, hallucination as statistical phenomena
 
-**Field maps:**
+**Foundations (the P0 spine):**
+- [Statistical & Probabilistic Foundations](seminars/statistical-probabilistic-foundations.md) — inference · modeling · learning theory · reasoning, as one calculus
+- [Data Foundations for Frontier AI](seminars/data-foundations.md) — the data pipeline (shared with 503)
+
+**Field maps & electives:**
 - [Applied Statistics for the Modern AI Era](seminars/applied-statistics-ai-era.md)
 - [Frontiers in Machine Learning](seminars/frontiers-ml.md)
+- [APSL — Algorithmic Probabilistic Structure Learning](seminars/apsl-structure-learning.md) — 18-week deep-dive elective (probabilistic structure learning → PFNs → causal FMs)
 
 ---
 
@@ -154,6 +180,7 @@ Two defended milestones before thesis work:
 **Reference docs:**
 - [Frontier Model Survey (2024→2026)](seminars/frontier-model-survey.md) — recipe-level map of every major lab
 - [100-Day Mastery Curriculum](seminars/frontier-models-100day-curriculum.md) — the full 503 backbone
+- [Data Foundations for Frontier AI](seminars/data-foundations.md) — pretraining/mid/post data · synthetic data · verifiers · data engineering
 
 ---
 
@@ -206,6 +233,145 @@ Two defended milestones before thesis work:
 - [09 · Algorithms & Systems for AI](seminars/frontier-ai/09-algorithms-and-systems/README.md) — distillation, mixed precision, ZeRO, FlashAttention, vLLM, Triton, HNSW
 - [13 · Agents — Capabilities & Systems](seminars/frontier-ai/13-agents-capabilities-systems/README.md) *(inference / serving side)* — PagedAttention, speculative decoding, continuous batching
 
+**Companion curriculum:** [Algorithms for AI/ML/DS](seminars/algorithms-for-ai-ml-ds.md) — randomized methods, RandNLA/sketching, ANN, streaming, graphs, flows, optimal transport *(also 506)*
+
+---
+
+## FAIRE 506 — Applied Mathematics for Frontier AI
+**6 credits · Term 1 (foundational, runs alongside 501)**
+
+*Peer equivalence: MIT 18.06 / 18.065 (Matrix Methods in Data Analysis), Stanford EE364A/B (Convex Optimization), measure-theoretic probability (CMU 36-752-style), plus numerical methods.*
+
+Where 501 is statistics and the science of learning, 506 is the deterministic math the whole program silently assumes — made *fluent*, not just recognized. The throughline: derive the frontier (backprop, LoRA, MLA, Adam/Muon, diffusion, flow matching) from the underlying algebra, optimization, and dynamical systems rather than importing it.
+
+**Outcomes:**
+1. Matrix calculus & numerical linear algebra — SVD/eigen, conditioning, low-rank, matrix differentials; derive backprop, LoRA, MLA, PCA from the algebra
+2. Optimization theory — convexity, duality, KKT, first/second-order methods; the geometry behind Adam / Muon / natural gradient
+3. Probability & measure — rigorous expectations, change-of-variables (flows), and the SDE footing
+4. Dynamical systems, control & differential equations — ODE/SDE/PDE flows, Lyapunov stability, the control↔RL view; the continuous view of diffusion, flow matching, and neural ODEs
+5. Numerical methods — stability, conditioning, floating-point, ODE solvers
+6. Statistical physics of learning — energy-based models, partition functions, and the stat-mech view of training & generalization
+
+**Arcs:** VI.A numerical linear algebra + matrix differentials · VI.B convex optimization from scratch · VI.C ODE/SDE solvers → flow matching
+
+**Capstones:**
+- **506.1 "Matrix methods, derived"** — SVD / low-rank / conditioning from scratch, applied to LoRA / MLA / PCA, as a notebook-text
+- **506.2 "From ODEs to flow matching"** — implement an ODE/SDE solver and connect it to a flow-matching sampler, with the derivation
+
+**Required reading:** Strang (*Linear Algebra and Learning from Data*); Boyd & Vandenberghe (*Convex Optimization*); Nocedal & Wright (*Numerical Optimization*); Chen et al. (Neural ODE); Lipman et al. (Flow Matching); **Brunton & Kutz** (*Data-Driven Science & Engineering* — ML × dynamical systems × control); **Åström & Murray** (*Feedback Systems*); **Sethna** (*Statistical Mechanics* — the physics behind energy-based models). → full book list in [The Canon](library/reads-and-references/00-books-the-canon.md)
+
+**Library (the 506 core notes):**
+- [library/foundations/](library/foundations/) — linear algebra, calculus & autodiff, optimization, probability, measure theory, statistical learning
+- Bricks: svd, eigendecomposition, matrix-rank, jacobian, reparameterization + the optimization/training-dynamics set
+
+**Field maps:** [Statistical & Probabilistic Foundations](seminars/statistical-probabilistic-foundations.md) · [Frontiers in Machine Learning](seminars/frontiers-ml.md)
+
+---
+
+## FAIRE 507 — Bioengineering & Foundation Models for Biology
+**6 credits · Term 2–3 · Applied / frontier track**
+
+*Peer equivalence: MIT 6.874 (Deep Learning in the Life Sciences), Stanford CS279 (computational biology), plus the protein/cell foundation-model literature.*
+
+The foundation-model paradigm applied to the most consequential non-language domain. Biology is an unusually good FM target — abundant sequence data, a *verifiable* signal (does it fold / bind / express?), and a multiscale structure (DNA → RNA → protein → cell → tissue → organism). This is where the program's causal / PFN research thread meets a real application.
+
+**Outcomes:**
+1. Reason about the biological "token" and pretraining objective at each scale (nucleotide, amino acid, gene-expression vector)
+2. Use and fine-tune protein & single-cell FMs (ESM-style; scGPT / AIDO.Cell-style) on a downstream task
+3. Frame a perturbation as an intervention — predict `P(expression | do(gene=KO))` — and evaluate against *held-out* perturbations
+4. Reproduce one structure-prediction or perturbation-prediction result with honest, baseline-anchored evaluation
+
+**Arcs:** VII.A protein/sequence FMs (ESM-style) · VII.B single-cell FMs + perturbation prediction · VII.C structure prediction & design (AlphaFold / RFdiffusion, conceptual + small repro)
+
+**Capstones:**
+- **507.1 "Virtual-cell perturbation"** — fine-tune a single-cell FM and beat a *linear baseline* honestly on held-out perturbations (the Virtual Cell Challenge bar)
+- **507.2 "Sequence-FM task reproduction"** — variant-effect or inverse-folding with a protein/RNA FM, with calibrated evaluation
+- *Bridges directly into the [R1 Causal Foundation Model](capstones/causal-foundation-model/capstone.md) virtual-cell stretch.*
+
+**Required reading:** Jumper (AlphaFold2); Abramson (AlphaFold3); Lin (ESM-2); Watson (RFdiffusion); Cui (scGPT); Song/Segal/Xing (AIDO vision, [2412.06993](https://arxiv.org/abs/2412.06993)); Ahlmann-Eltze (linear-baseline critique)
+
+**Seminar topics (foundation-models breadth track):**
+- [06 · Protein & Biology](seminars/foundation-models/06-protein-and-biology/README.md)
+- [07 · Omics & Genomics](seminars/foundation-models/07-omics-and-genomics/README.md)
+- [12 · Virtual Cells](seminars/foundation-models/12-virtual-cells/README.md) → [AIDO — Digital Organism](seminars/foundation-models/12-virtual-cells/aido-digital-organism.md)
+
+**Research bridge:** [APSL course](seminars/apsl-structure-learning.md) (causal FMs + virtual cell) · [R1 capstone](capstones/causal-foundation-model/capstone.md)
+
+---
+
+# Frontier & Impact Tracks
+
+*Three integrative 4-credit tracks layered on the technical core — where the capabilities meet the research frontier, scientific discovery, and human trust. Lighter than the 6-credit cores (each = 2 arcs + 1 capstone); they **synthesize and apply** rather than build everything from scratch.*
+
+## FAIRE 508 — AI for Science & Discovery
+**4 credits · Term 2–3 · Frontier & Impact track**
+
+*Peer equivalence: the "AI for Science" literature + domain-FM courses; pairs with 507.*
+
+AI as an instrument of discovery — not a model you train, but a microscope you point at a scientific problem. Where do foundation models and ML actually accelerate the sciences (biology, chemistry/materials, climate, physics, math), and what makes a domain tractable?
+
+**Outcomes:**
+1. Map the "AI for X" pattern across domains — what transfers (FMs, scaling, self-supervision) vs. what each science must reinvent
+2. Reproduce or analyze one scientific-ML result (protein / materials / weather / math) with honest, baseline-anchored evaluation
+3. Reason about the discovery loop: hypothesis → in-silico prediction → experimental verification → iterate
+4. Identify the verification signal that makes a domain a good (or bad) FM target
+
+**Arcs:** VIII.A AI-for-science landscape (bio · materials · climate · math) · VIII.B one deep reproduction/analysis
+
+**Capstone:** **508.1** — a scientific-ML reproduction or investigation in one domain, with a write-up framing the discovery loop and its verification signal
+
+**Required reading:** Abramson (AlphaFold 3); Merchant (GNoME) / Zeni (MatterGen); Lam (GraphCast) / Price (GenCast); Trinh (AlphaGeometry) / AlphaProof; Song/Segal/Xing (AIDO vision)
+
+**Seminar topics:** [foundation-models/](seminars/foundation-models/README.md) domains 06/07/08/12/13 · bridges to **507**
+
+---
+
+## FAIRE 509 — AI Safety, Trust & Human Prosperity
+**4 credits · Term 3 · Frontier & Impact track**
+
+*Peer equivalence: alignment/safety reading lists (Anthropic, Redwood, MATS-style) + AI-policy & economic-impact work.*
+
+The mission layer — making frontier systems trustworthy and good for people. Spans technical alignment, evaluation & oversight, interpretability-for-safety, and the human/societal dimension (misuse, labor & economic impact, governance).
+
+**Outcomes:**
+1. Run/analyze an alignment technique (RLHF / RLAIF / Constitutional AI) and articulate its failure modes (reward hacking, sycophancy, deceptive alignment)
+2. Build a dangerous-capability or robustness eval; reason precisely about what it does and doesn't certify
+3. Use interpretability for safety — probe/steer with an SAE; assess CoT monitorability
+4. Reason clearly about the human dimension — misuse, economic impact, governance, and "human prosperity" as a design target, not an afterthought
+
+**Arcs:** IX.A alignment technique + failure-mode probe · IX.B a safety eval / red-team + an interpretability check
+
+**Capstone:** **509.1** — a mini model-safety study: an alignment or eval intervention **+ a written safety case** (what it certifies, what it doesn't, the residual risk)
+
+**Required reading:** Bai (Constitutional AI); Hubinger (Sleeper Agents); Anthropic (Scaling Monosemanticity); dangerous-capability eval papers; CoT-monitorability work; frontier system cards; selected AI-policy / economic-impact pieces
+
+**Seminar topics:** [15 · Alignment, Evaluation & Safety](seminars/frontier-ai/15-alignment-evaluation-safety/README.md) · bridges to **504**
+
+---
+
+## FAIRE 510 — Advanced Machine Intelligence
+**4 credits · Term 2–3 · Frontier & Impact track *(the research core)***
+
+*Causal, representation & world models. Peer equivalence: causal ML + representation learning + model-based RL / world-models literature; the subject home of the program's research thread.*
+
+The integrative ML track that ties the program's research identity together — the machinery of *intelligence beyond pattern-fitting*: how machines build **structured, causal, multimodal** representations of the world — and **predictive world models** of it. This is where the causal-FM / PFN / world-models thread lives as a subject (folding in representation learning, causal ML/CRL, multimodal/embodied grounding, and world models).
+
+**Outcomes:**
+1. Causal ML & CRL — SCMs, do-calculus, identification, causal representation learning; recover and exploit causal structure
+2. Representation learning — self-supervised / contrastive / JEPA-style and multimodal embeddings; what makes a representation transfer and stay invariant under shift
+3. World models — model-based RL and learned simulators (Dreamer / TD-MPC style); planning inside a learned model
+4. Amortized & causal foundation models — PFNs / Do-PFN / CausalPFN; in-context causal inference (the R1 thread)
+
+**Arcs:** X.A causal ML + CRL · X.B representation learning / JEPA probe · X.C a small world-model or amortized-causal (PFN) build
+
+**Capstone:** **510.1** — extend the research thread: a CRL, world-model, or causal-FM (PFN) investigation with calibrated evaluation *(natural feeder into the [R1 capstone](capstones/causal-foundation-model/capstone.md) and the 599 honors bet)*
+
+**Required reading:** Schölkopf (Toward Causal Representation Learning); Pearl (Causality); Assran (I-JEPA); Hafner (DreamerV3); Müller (PFNs); Do-PFN / CausalPFN
+
+**Library & courses:** [library/causal-ml/](library/causal-ml/) · [APSL course](seminars/apsl-structure-learning.md) · [Statistical & Probabilistic Foundations](seminars/statistical-probabilistic-foundations.md) · [R1 capstone](capstones/causal-foundation-model/capstone.md)
+
+**Seminar topics:** [03 · Representation Learning](seminars/frontier-ai/03-representation-learning/README.md) · [08 · Causal & Statistical Inference](seminars/frontier-ai/08-causal-statistical-inference/README.md) · [07 · Reinforcement Learning](seminars/frontier-ai/07-reinforcement-learning/README.md) (world models)
+
 ---
 
 ## FAIRE 599 — Capstone Thesis
@@ -217,7 +383,7 @@ Two defended milestones before thesis work:
 
 **Defense:** written report + recorded walkthrough justifying every design and statistical claim.
 
-**Honors option:** extend toward one research bet — CRL × continual learning, world-models × MARL, or mechanistic interpretability — as a small original contribution.
+**Honors option:** extend toward one research bet — **causal foundation models / amortized causal inference (PFNs)** ([R1 capstone](capstones/causal-foundation-model/capstone.md), [APSL course](seminars/apsl-structure-learning.md)), CRL × continual learning, world-models × MARL, or mechanistic interpretability — as a small original contribution.
 
 ---
 
@@ -225,11 +391,11 @@ Two defended milestones before thesis work:
 
 | Term | Weeks | Subjects | Milestone |
 |---|---|---|---|
-| **Term 1** | 1–12 | 501 + start 502 | Q1 + Q2 quals (FAIRE 500) |
-| **Term 2** | 13–24 | finish 502 · 503 · start 504 | 503.1 nanoLM (thesis spine begins) |
-| **Term 3** | 25–36 | finish 504 · 505 · **599 thesis** | Thesis defense |
+| **Term 1** | 1–12 | 501 + **506** + start 502 | Q1 + Q2 quals (FAIRE 500) |
+| **Term 2** | 13–24 | finish 502 · 503 · start 504 · 507 · tracks **508/510** | 503.1 nanoLM (thesis spine begins) |
+| **Term 3** | 25–36 | finish 504 · 505 · 507 · tracks **508/509/510** · **599 thesis** | Thesis defense |
 
-*Maps onto the [30-Build Roadmap](seminars/30-builds-roadmap.md) as the literal calendar — weekly bricks are arcs, monthly arcs are capstones.*
+*One possible route across the terrain — **not a literal schedule**. The operating unit is the ~100-hour block on a single module (see [How this runs](#how-this-actually-runs--a-living-system)); the [30-Build Roadmap](seminars/30-builds-roadmap.md) is scaffold for orientation and blind-spot awareness.*
 
 ---
 
@@ -240,6 +406,11 @@ On completion, with public reproducible evidence, you can claim:
 - **Build & scale a frontier model end to end** (503 + 505 + thesis)
 - **Do reasoning RL, post-training, and interpretability** (504) — the 2024–2026 frontier and the Anthropic-defining skill set
 - **Validate any claim statistically** (501 + quals) — the rare rigor that reads as seniority
+- **Derive the math from first principles** (506) — linear algebra, optimization, and the ODE/SDE view behind diffusion/flow
+- **Apply foundation models to biology** (507) — protein & single-cell FMs, perturbation-as-intervention, baseline-honest bio evaluation
+- **Accelerate scientific discovery with AI** (508) — the AI-for-science pattern across domains, with honest evaluation
+- **Make systems safe & trustworthy** (509) — alignment, dangerous-capability evals, interpretability-for-safety, a written safety case
+- **Own a research thread** (510 + thesis honors) — causal, representation & world models; in-context causal inference
 - **Implement, derive, and reproduce from first principles** (all subjects + Q1) — research literacy, demonstrated
 
 ---
@@ -249,11 +420,15 @@ On completion, with public reproducible evidence, you can claim:
 | FAIRE component | nthExperiment resource |
 |-----------------|----------------------|
 | Seminar reading | [seminars/frontier-ai/](seminars/frontier-ai/) — 16 topics, 327 papers |
+| **Foundation-models survey** | [seminars/foundation-models/](seminars/foundation-models/README.md) — 15-domain cross-domain breadth track (language → virtual cells) |
+| **Foundations (P0)** | [Statistical & Probabilistic](seminars/statistical-probabilistic-foundations.md) · [Data Foundations](seminars/data-foundations.md) |
+| **Deep-dive course** | [APSL](seminars/apsl-structure-learning.md) — probabilistic structure learning → causal FMs |
 | Field maps | [seminars/](seminars/) — ML, DL, DS, Applied Stats surveys |
-| Library / concepts | [library/](library/) — foundations, deep learning, RL, causal, systems |
+| Library / concepts | [library/](library/README.md) — foundations, deep learning, RL, causal, systems |
+| **Bricks (atomic cards)** | [library/bricks/](library/bricks/README.md) — 334 concept cards + [topic-map](library/bricks/topic-map.md) (the concept backlog) |
 | Reads & references | [library/reads-and-references/](library/reads-and-references/) |
 | Lecture myself | [lecture-myself/](lecture-myself/) — 10 tracks, university-level notes |
-| Arcs (weekly builds) | [arcs/](arcs/) |
+| Arcs (builds) | [arcs/](arcs/) — from-scratch builds that emerge from a live question |
 | Capstones (defended) | [capstones/](capstones/) |
 | Experiments / builds | [experiments/](experiments/) + [tiny-experiments/](tiny-experiments/) |
 | 30-build roadmap | [seminars/30-builds-roadmap.md](seminars/30-builds-roadmap.md) |
@@ -290,6 +465,10 @@ On completion, with public reproducible evidence, you can claim:
 
 | Map | FAIRE Subject |
 |-----|---------------|
+| [Statistical & Probabilistic Foundations](seminars/statistical-probabilistic-foundations.md) | 501 (P0) |
+| [Data Foundations for Frontier AI](seminars/data-foundations.md) | 501 + 503 |
+| [APSL — Structure Learning (course)](seminars/apsl-structure-learning.md) | 501/502 elective |
+| [Foundation Models — 15-domain survey](seminars/foundation-models/README.md) | Breadth |
 | [Frontiers in Machine Learning](seminars/frontiers-ml.md) | 501 |
 | [Frontiers in Deep Learning](seminars/frontiers-dl.md) | 502 |
 | [Frontiers in Data Science](seminars/frontiers-ds.md) | 501 + 503 |

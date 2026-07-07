@@ -62,6 +62,8 @@ The bedrock the rest of the curriculum stands on — *frontier AI as applied pro
 | [Frontiers in Deep Learning](frontiers-dl.md) | Architectures, diffusion/flow, DL theory, interpretability |
 | [Frontiers in Data Science](frontiers-ds.md) | Tabular/TS FMs, causal at scale, conformal, data-centric |
 | [Applied Statistics for the Modern AI Era](applied-statistics-ai-era.md) | Evals, calibration, PPI, conformal, anytime-valid |
+| [Algorithms for AI/ML/DS](algorithms-for-ai-ml-ds.md) | Randomized methods, RandNLA/sketching, ANN, streaming, graphs, flows, optimal transport |
+| [Statistical Learning Theory](statistical-learning-theory.md) | Generalization theory — VC/Rademacher, PAC-Bayes, kernels, high-dim stats, deep-learning theory |
 | [Frontier of ML/DL/DS — Wide-Angle Map](frontier-ml-dl-ds-map.md) | What "frontier" means + how to position yourself on it |
 | [How to Read a Paper](how-to-read.md) | 8 angles, sequencing guide, three exits |
 

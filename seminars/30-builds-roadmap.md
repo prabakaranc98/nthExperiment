@@ -2,7 +2,7 @@
 
 *Converting the survey + curriculum into shipped work. 30 serious builds over ~26 weeks. One continuous thread (**nanoLM**, taken end-to-end) with weekly **bricks** orbiting a monthly **arc**. Every build has a hard "ships when…" line — that line is the build.*
 
-**FAIRE context:** This is the literal calendar for the FAIRE program. Monthly arcs = subject capstones. → [Program Handbook](../faire-program.md) · [Now](../now.md)
+**FAIRE context:** **one route** across the terrain — a scaffold for orientation and blind-spot awareness, **not a schedule**. The real operating unit is a [~100-hour block on one module, driven by a live question](../now.md) ([a living system, not a checklist](../faire-program.md#how-this-actually-runs--a-living-system)). Use this map to see what you're *skipping*, not to pace yourself — and let builds emerge from questions, never from a résumé/JD. → [Program Handbook](../faire-program.md) · [Now](../now.md)
 
 ---
 

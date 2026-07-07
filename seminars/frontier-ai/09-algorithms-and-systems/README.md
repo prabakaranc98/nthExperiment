@@ -3,6 +3,7 @@
 *The systems that make scale tractable — parallelism, precision, kernels, serving, and the retrieval/quantization algorithms underneath.*
 
 **Papers:** 20 · **Pace:** ~10 days at 2/day
+**Companion curriculum:** [Algorithms for AI/ML/DS](../../algorithms-for-ai-ml-ds.md) — randomized methods · RandNLA/sketching · ANN · streaming · graphs · flows · OT
 
 ---
 
